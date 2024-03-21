@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+ surrealdb:
+    image: surrealdb/surrealdb:latest
+    command: start --log trace --auth --user root --pass root file:/db/reipeDump.db
+    user: root
+    volumes:
+      - ./volume:/db:Z
+    ports:
+      - "8000:8000"

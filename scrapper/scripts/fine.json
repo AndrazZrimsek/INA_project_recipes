@@ -1,0 +1,1117 @@
+{
+  "client": "bbcgoodfood",
+  "postId": "212043",
+  "published": null,
+  "slug": "rhubarb-crumble-cake",
+  "title": "Rhubarb crumble cake",
+  "status": "published",
+  "isPrivate": false,
+  "postType": "recipe",
+  "recommendedPost": {
+    "heading": "More like this",
+    "getItemsUrl": "/api/recipes-frontend/search/recommended-items?limit=1&clientId=212043&search=Rhubarb%20crumble%20cake&category=recipes"
+  },
+  "authorBioShow": false,
+  "authors": [
+    {
+      "name": "Sarah Cook",
+      "avatar": null,
+      "bio": null,
+      "facebook": null,
+      "instagram": null,
+      "jobTitle": null,
+      "suffix": null,
+      "twitter": null,
+      "url": "/author/sarahcook"
+    }
+  ],
+  "description": "<p>Pretty pink fruit ripples through this light sponge cake with crunchy crumble topping - a spin on classic comfort baking</p>",
+  "endSummary": [],
+  "introduction": [[]],
+  "promo": {
+    "label": "Get 5 issues for £5 when you subscribe to our magazine",
+    "url": "https://www.buysubscriptions.com/print/good-food-magazine-subscription?promo=GFBS324B&amp;utm_medium=brandsite&amp;utm_source=goodfood.com&amp;utm_campaign=5-for-5_gfbs324b&amp;utm_content=editorial-linkb&amp;style=brand",
+    "type": "promotional-link"
+  },
+  "userRatings": { "avg": 4.6, "total": 68, "isHalfStar": false },
+  "isSaveable": true,
+  "sponsor": null,
+  "relatedItems": [],
+  "callout": null,
+  "plantOverview": null,
+  "ingredients": [
+    {
+      "@id": "/v1/ingredient_groups/698018",
+      "ingredients": [
+        {
+          "@id": "/v1/ingredients/5255010",
+          "@type": "Ingredient",
+          "ingredientText": "pack of  butter",
+          "note": ", softened",
+          "quantityText": "250g",
+          "glossaryLink": "/glossary/butter-glossary",
+          "term": {
+            "@id": "/v1/terms/145138412",
+            "@type": "Term",
+            "slug": "butter",
+            "display": "butter",
+            "taxonomy": "ingredient",
+            "meta": []
+          }
+        },
+        {
+          "@id": "/v1/ingredients/5255011",
+          "@type": "Ingredient",
+          "ingredientText": "golden caster sugar",
+          "note": ", plus 1 tbsp",
+          "quantityText": "250g",
+          "glossaryLink": "/glossary/sugar-glossary",
+          "term": {
+            "@id": "/v1/terms/145138413",
+            "@type": "Term",
+            "slug": "golden-caster-sugar",
+            "display": "golden caster sugar",
+            "taxonomy": "ingredient",
+            "meta": []
+          }
+        },
+        {
+          "@id": "/v1/ingredients/5255012",
+          "@type": "Ingredient",
+          "ingredientText": "vanilla extract",
+          "quantityText": "2 tsp",
+          "glossaryLink": "/glossary/vanilla-glossary",
+          "term": {
+            "@id": "/v1/terms/145138414",
+            "@type": "Term",
+            "slug": "vanilla-extract",
+            "display": "vanilla extract",
+            "taxonomy": "ingredient",
+            "meta": []
+          }
+        },
+        {
+          "@id": "/v1/ingredients/5255013",
+          "@type": "Ingredient",
+          "ingredientText": "large eggs",
+          "quantityText": "5",
+          "glossaryLink": "/glossary/egg-glossary",
+          "term": {
+            "@id": "/v1/terms/145138415",
+            "@type": "Term",
+            "slug": "large-egg",
+            "display": "large egg",
+            "taxonomy": "ingredient",
+            "meta": []
+          }
+        },
+        {
+          "@id": "/v1/ingredients/5255014",
+          "@type": "Ingredient",
+          "ingredientText": "plain flour",
+          "note": ", plus 7 tbsp",
+          "quantityText": "300g",
+          "glossaryLink": "/glossary/flour-glossary",
+          "term": {
+            "@id": "/v1/terms/145138416",
+            "@type": "Term",
+            "slug": "plain-flour",
+            "display": "plain flour",
+            "taxonomy": "ingredient",
+            "meta": []
+          }
+        },
+        {
+          "@id": "/v1/ingredients/5255015",
+          "@type": "Ingredient",
+          "ingredientText": "baking powder",
+          "quantityText": "2 tsp",
+          "glossaryLink": "/glossary/baking-powder-glossary",
+          "term": {
+            "@id": "/v1/terms/145138417",
+            "@type": "Term",
+            "slug": "baking-powder",
+            "display": "baking powder",
+            "taxonomy": "ingredient",
+            "meta": []
+          }
+        },
+        {
+          "@id": "/v1/ingredients/5255016",
+          "@type": "Ingredient",
+          "ingredientText": "ground cinnamon",
+          "quantityText": "1 tsp",
+          "glossaryLink": "/glossary/cinnamon-glossary",
+          "term": {
+            "@id": "/v1/terms/145138418",
+            "@type": "Term",
+            "slug": "ground-cinnamon",
+            "display": "ground cinnamon",
+            "taxonomy": "ingredient",
+            "meta": []
+          }
+        },
+        {
+          "@id": "/v1/ingredients/5255017",
+          "@type": "Ingredient",
+          "ingredientText": "rhubarb",
+          "note": ", washed, trimmed and finely sliced",
+          "quantityText": "300g",
+          "glossaryLink": "/glossary/rhubarb-glossary",
+          "term": {
+            "@id": "/v1/terms/145138419",
+            "@type": "Term",
+            "slug": "rhubarb",
+            "display": "rhubarb",
+            "taxonomy": "ingredient",
+            "meta": []
+          }
+        }
+      ]
+    }
+  ],
+  "nutritionalInfo": [
+    { "label": "kcal", "value": 304, "prefix": "", "suffix": "" },
+    { "label": "fat", "value": 15, "prefix": "", "suffix": "g" },
+    { "label": "saturates", "value": 8.7, "prefix": "", "suffix": "g" },
+    { "label": "carbs", "value": 36.8, "prefix": "", "suffix": "g" },
+    { "label": "sugars", "value": 17.6, "prefix": "", "suffix": "g" },
+    { "label": "fibre", "value": 1.5, "prefix": "", "suffix": "g" },
+    { "label": "protein", "value": 4.8, "prefix": "", "suffix": "g" },
+    { "label": "salt", "value": 0.5, "prefix": "low in", "suffix": "g" }
+  ],
+  "nutritionalInfoCaption": "Nutrition:",
+  "planning": [{ "display": "Freezable", "slug": "freezable" }],
+  "skillLevel": "Easy",
+  "cookAndPrepTime": {
+    "preparationMin": 0,
+    "preparationMax": 1500,
+    "cookingMin": 0,
+    "cookingMax": 4500,
+    "total": 6000
+  },
+  "methodSteps": [
+    {
+      "@id": "/v1/methods/1759237",
+      "@type": "Method",
+      "type": "step",
+      "content": [
+        {
+          "@id": "/v1/contents/64864352",
+          "@type": "Content",
+          "type": "html",
+          "data": {
+            "value": "<p>Heat oven to 160C/140C fan/gas 3 and grease and line the base and sides of a deep 20cm round cake tin with a little of the butter and baking parchment. Put the butter, 250g sugar and vanilla into a big mixing bowl. Beat until light and fluffy with an electric whisk.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "/v1/methods/1759238",
+      "@type": "Method",
+      "type": "step",
+      "content": [
+        {
+          "@id": "/v1/contents/64864353",
+          "@type": "Content",
+          "type": "html",
+          "data": {
+            "value": "<p>Beat in the eggs, one by one, then fold in the 300g flour and baking powder. Spoon out 85g of the batter, and stir the extra 7 tbsp flour and cinnamon into this with a cutlery knife so it becomes crumbly.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "/v1/methods/1759239",
+      "@type": "Method",
+      "type": "step",
+      "content": [
+        {
+          "@id": "/v1/contents/64864354",
+          "@type": "Content",
+          "type": "html",
+          "data": {
+            "value": "<p>Fold the rhubarb into the rest of the cake batter and scrape into the prepared tin. Scatter over the crumble mix followed by 1 tbsp sugar. Bake for 1 hr 15 mins, until a skewer poked in comes out clean – you’ll need to lay a sheet of foil on top after an hour if the cake is browning too much. Cool for 15 mins in the tin, then finish on a wire rack.</p>"
+          }
+        }
+      ]
+    }
+  ],
+  "servings": "Cuts into 8 slices",
+  "diet": [],
+  "recommended": {
+    "heading": "Goes well with",
+    "getItemsUrl": "/api/recipes-frontend/lists/card/recipe?id[]=4174&id[]=7443"
+  },
+  "recommendedLink": {
+    "heading": "Our Most Popular Alternative",
+    "getItemsUrl": "/api/recipes-frontend/search/recommended-items?limit=1&clientId=212043&search=Rhubarb%20crumble%20cake&postType=recipe&category=recipes"
+  },
+  "publication": null,
+  "breadcrumbs": [
+    { "label": "Home", "url": "https://www.bbcgoodfood.com:443" },
+    { "label": "Recipes", "url": "https://www.bbcgoodfood.com/recipes" },
+    { "label": "Rhubarb crumble cake" }
+  ],
+  "seoMetadata": {
+    "title": "Rhubarb crumble cake",
+    "description": "Pretty pink fruit ripples through this light sponge cake with crunchy crumble topping - a spin on classic comfort baking",
+    "metaTitle": "Rhubarb crumble cake recipe",
+    "metaDescription": "Pretty-in-pink fruit ripples through this light sponge cake with crunchy crumble topping - a spin on classic comfort baking, from BBC Good Food. ",
+    "image": {
+      "@id": "/v1/images/18466534",
+      "@type": "Image",
+      "alt": "Rhubarb crumble cake",
+      "aspectRatio": 0.9083333333333333,
+      "height": 400,
+      "title": "Rhubarb crumble cake",
+      "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1243456_8-573d6d6.jpg",
+      "width": 440,
+      "sourceName": null
+    },
+    "type": "article",
+    "robots": "",
+    "canonicalUrl": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble-cake"
+  },
+  "speedCurveLux": {
+    "label": "recipe",
+    "data": { "layout-variant": "masthead" }
+  },
+  "pageUrl": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble-cake",
+  "canonicalUrl": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble-cake",
+  "permutiveModel": {
+    "category": ["recipes"],
+    "subcategory": ["recipe"],
+    "channel": "recipes",
+    "title": "Rhubarb crumble cake",
+    "article": {
+      "id": "212043",
+      "description": "Pretty pink fruit ripples through this light sponge cake with crunchy crumble topping - a spin on classic comfort baking",
+      "author": "Sarah Cook",
+      "type": "recipe",
+      "tags": [
+        "Baking",
+        "Crumble topping",
+        "Family",
+        "Fruit cake",
+        "Rubarb",
+        "Sarah Cook",
+        "Seasonal",
+        "Sponge cake",
+        "Spring"
+      ]
+    },
+    "recipe": {
+      "cooking_time": 4500,
+      "prep_time": 1500,
+      "serves": null,
+      "keywords": [
+        "baking",
+        "crumble-topping",
+        "family",
+        "fruit-cake",
+        "rubarb",
+        "sarah-cook",
+        "seasonal",
+        "sponge-cake",
+        "spring"
+      ],
+      "nutrition_info": [
+        "kcal 304",
+        "fat 15g",
+        "saturates 8.7g",
+        "carbs 36.8g",
+        "sugars 17.6g",
+        "fibre 1.5g",
+        "protein 4.8g",
+        "low in salt 0.5g"
+      ],
+      "ingredients": [
+        "pack of  butter",
+        "golden caster sugar",
+        "vanilla extract",
+        "large eggs",
+        "plain flour",
+        "baking powder",
+        "ground cinnamon",
+        "rhubarb"
+      ],
+      "courses": ["afternoon-tea", "dessert"],
+      "diet_types": [],
+      "skill_level": "easy",
+      "post_dates": "2013-03-06T10:04:17+00:00"
+    }
+  },
+  "socialShare": {
+    "platforms": [],
+    "emailSubject": "Yum!",
+    "emailBody": "Good Food every day...",
+    "twitterHandle": "@bbcgoodfood",
+    "fbAuthorizeCode": "31296838546",
+    "title": "Rhubarb%20crumble%20cake",
+    "tweet": "Rhubarb%20crumble%20cake",
+    "disabled": false,
+    "imageUrl": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1243456_8-573d6d6.jpg",
+    "url": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble-cake"
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@id": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble-cake#Recipe",
+    "@type": "Recipe",
+    "description": "Pretty pink fruit ripples through this light sponge cake with crunchy crumble topping - a spin on classic comfort baking",
+    "image": {
+      "@type": "ImageObject",
+      "height": 574,
+      "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1243456_8-573d6d6.jpg?resize=768,574",
+      "width": 768
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble-cake"
+    },
+    "name": "Rhubarb crumble cake",
+    "url": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble-cake",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Sarah Cook",
+        "url": "https://www.bbcgoodfood.com/author/sarahcook"
+      }
+    ],
+    "dateModified": "2022-11-08T12:55:57+00:00",
+    "datePublished": "2013-03-06T10:04:17+00:00",
+    "headline": "Rhubarb crumble cake",
+    "keywords": "Baking, Crumble topping, Family, Fruit cake, Rubarb, Sarah Cook, Seasonal, Sponge cake, Spring",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Good Food",
+      "url": "https://www.bbcgoodfood.com",
+      "logo": {
+        "@type": "ImageObject",
+        "height": 65,
+        "url": "https://images.immediate.co.uk/production/volatile/sites/30/2024/03/cropped-GF-new-teal-1-7004649-a80b70d.png?resize=265,65",
+        "width": 265
+      }
+    },
+    "isAccessibleForFree": "False",
+    "hasPart": {
+      "@type": "WebPageElement",
+      "isAccessibleForFree": "False",
+      "cssSelector": ".js-piano-locked-content"
+    },
+    "cookTime": "PT1H15M",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "304 calories",
+      "fatContent": "15 grams fat",
+      "saturatedFatContent": "8.7 grams saturated fat",
+      "carbohydrateContent": "36.8 grams carbohydrates",
+      "sugarContent": "17.6 grams sugar",
+      "fiberContent": "1.5 grams fiber",
+      "proteinContent": "4.8 grams protein",
+      "sodiumContent": "0.5 milligram of sodium"
+    },
+    "prepTime": "PT25M",
+    "recipeCategory": "Afternoon tea, Dessert",
+    "recipeCuisine": "British",
+    "recipeIngredient": [
+      "250g pack of  butter , softened",
+      "250g golden caster sugar , plus 1 tbsp",
+      "2 tsp vanilla extract",
+      "5 large eggs",
+      "300g plain flour , plus 7 tbsp",
+      "2 tsp baking powder",
+      "1 tsp ground cinnamon",
+      "300g rhubarb , washed, trimmed and finely sliced"
+    ],
+    "recipeInstructions": [
+      {
+        "@type": "HowToStep",
+        "text": "Heat oven to 160C/140C fan/gas 3 and grease and line the base and sides of a deep 20cm round cake tin with a little of the butter and baking parchment. Put the butter, 250g sugar and vanilla into a big mixing bowl. Beat until light and fluffy with an electric whisk."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Beat in the eggs, one by one, then fold in the 300g flour and baking powder. Spoon out 85g of the batter, and stir the extra 7 tbsp flour and cinnamon into this with a cutlery knife so it becomes crumbly."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Fold the rhubarb into the rest of the cake batter and scrape into the prepared tin. Scatter over the crumble mix followed by 1 tbsp sugar. Bake for 1 hr 15 mins, until a skewer poked in comes out clean – you’ll need to lay a sheet of foil on top after an hour if the cake is browning too much. Cool for 15 mins in the tin, then finish on a wire rack."
+      }
+    ],
+    "recipeYield": "Cuts into 8 slices",
+    "totalTime": "PT1H40M"
+  },
+  "targeting": {
+    "gtm": {
+      "cat": ["recipes"],
+      "channel": "recipes",
+      "format": "standard",
+      "pageid": "212043",
+      "primary_cat": "recipes",
+      "subcat": "recipe",
+      "author": "Sarah Cook",
+      "publish_date": "2013-03-06T10:04:17+00:00",
+      "template": "recipe",
+      "taxonomies": {
+        "posttag": [
+          "baking",
+          "crumble-topping",
+          "family",
+          "fruit-cake",
+          "rubarb",
+          "sarah-cook",
+          "seasonal",
+          "sponge-cake",
+          "spring"
+        ],
+        "cuisine": ["british"],
+        "meal-type": ["afternoon-tea", "dessert"],
+        "occasion": ["party"]
+      }
+    },
+    "dfp": {
+      "configuration": "live",
+      "cat": ["recipes"],
+      "channel": "recipes",
+      "format": "standard",
+      "pageid": "212043",
+      "primary_cat": "recipes",
+      "subcat": "recipe",
+      "posttag": [
+        "baking",
+        "crumble-topping",
+        "family",
+        "fruit-cake",
+        "rubarb",
+        "sarah-cook",
+        "seasonal",
+        "sponge-cake",
+        "spring"
+      ],
+      "cuisine": ["british"],
+      "meal-type": ["afternoon-tea", "dessert"],
+      "occasion": ["party"]
+    },
+    "piano": [
+      { "key": "premiumContent", "value": false },
+      { "key": "primaryCategory", "value": "recipes" },
+      { "key": "postType", "value": "recipe" },
+      { "key": "categories", "value": ["recipes"] },
+      {
+        "key": "tags",
+        "value": [
+          "baking",
+          "crumble-topping",
+          "family",
+          "fruit-cake",
+          "rubarb",
+          "sarah-cook",
+          "seasonal",
+          "sponge-cake",
+          "spring"
+        ]
+      }
+    ]
+  },
+  "postPreview": 3,
+  "affiliateMessage": null,
+  "image": {
+    "@id": "/v1/images/18466534",
+    "@type": "Image",
+    "alt": "Rhubarb crumble cake",
+    "aspectRatio": 0.9083333333333333,
+    "height": 400,
+    "title": "Rhubarb crumble cake",
+    "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1243456_8-573d6d6.jpg",
+    "width": 440,
+    "sourceName": null
+  },
+  "ediplayer": null,
+  "greenVideo": null,
+  "suppression": {
+    "@id": "/v1/suppressions/2452890",
+    "@type": "Suppression",
+    "disableAllAds": false,
+    "disableInTextAds": false,
+    "disableRtbAds": false,
+    "disableAdsOnPictures": false,
+    "disableBurdaffiInText": false,
+    "disableBurdaffiWidgets": false,
+    "disableEdiplayerAds": false,
+    "disableEdiplayerAutoplay": false,
+    "disableEdiplayerPlaylist": false,
+    "disableEdiplayerInjection": false
+  },
+  "layout": "masthead",
+  "taxonomies": [
+    {
+      "@id": "/v1/taxonomies/42301229",
+      "@type": "Taxonomy",
+      "display": "Categories",
+      "slug": "category",
+      "terms": [
+        {
+          "@id": "/v1/terms/145138436",
+          "@type": "Term",
+          "slug": "recipes",
+          "display": "Recipes",
+          "taxonomy": "category",
+          "meta": []
+        }
+      ]
+    },
+    {
+      "@id": "/v1/taxonomies/42301230",
+      "@type": "Taxonomy",
+      "display": "Tags",
+      "slug": "post_tag",
+      "terms": [
+        {
+          "@id": "/v1/terms/145138437",
+          "@type": "Term",
+          "slug": "baking",
+          "display": "Baking",
+          "taxonomy": "post_tag",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138438",
+          "@type": "Term",
+          "slug": "crumble-topping",
+          "display": "Crumble topping",
+          "taxonomy": "post_tag",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138439",
+          "@type": "Term",
+          "slug": "family",
+          "display": "Family",
+          "taxonomy": "post_tag",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138440",
+          "@type": "Term",
+          "slug": "fruit-cake",
+          "display": "Fruit cake",
+          "taxonomy": "post_tag",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138441",
+          "@type": "Term",
+          "slug": "rubarb",
+          "display": "Rubarb",
+          "taxonomy": "post_tag",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138442",
+          "@type": "Term",
+          "slug": "sarah-cook",
+          "display": "Sarah Cook",
+          "taxonomy": "post_tag",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138443",
+          "@type": "Term",
+          "slug": "seasonal",
+          "display": "Seasonal",
+          "taxonomy": "post_tag",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138444",
+          "@type": "Term",
+          "slug": "sponge-cake",
+          "display": "Sponge cake",
+          "taxonomy": "post_tag",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138445",
+          "@type": "Term",
+          "slug": "spring",
+          "display": "Spring",
+          "taxonomy": "post_tag",
+          "meta": []
+        }
+      ]
+    },
+    {
+      "@id": "/v1/taxonomies/42301231",
+      "@type": "Taxonomy",
+      "display": "Cuisines",
+      "slug": "cuisine",
+      "terms": [
+        {
+          "@id": "/v1/terms/145138446",
+          "@type": "Term",
+          "slug": "british",
+          "display": "British",
+          "taxonomy": "cuisine",
+          "meta": []
+        }
+      ]
+    },
+    {
+      "@id": "/v1/taxonomies/42301232",
+      "@type": "Taxonomy",
+      "display": "Difficulties",
+      "slug": "difficulty",
+      "terms": [
+        {
+          "@id": "/v1/terms/145138447",
+          "@type": "Term",
+          "slug": "easy",
+          "display": "Easy",
+          "taxonomy": "difficulty",
+          "meta": []
+        }
+      ]
+    },
+    {
+      "@id": "/v1/taxonomies/42301233",
+      "@type": "Taxonomy",
+      "display": "Ingredients",
+      "slug": "ingredient",
+      "terms": [
+        {
+          "@id": "/v1/terms/145138448",
+          "@type": "Term",
+          "slug": "baking-powder",
+          "display": "baking powder",
+          "taxonomy": "ingredient",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138449",
+          "@type": "Term",
+          "slug": "butter",
+          "display": "butter",
+          "taxonomy": "ingredient",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138450",
+          "@type": "Term",
+          "slug": "golden-caster-sugar",
+          "display": "golden caster sugar",
+          "taxonomy": "ingredient",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138451",
+          "@type": "Term",
+          "slug": "ground-cinnamon",
+          "display": "ground cinnamon",
+          "taxonomy": "ingredient",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138452",
+          "@type": "Term",
+          "slug": "large-egg",
+          "display": "large egg",
+          "taxonomy": "ingredient",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138453",
+          "@type": "Term",
+          "slug": "plain-flour",
+          "display": "plain flour",
+          "taxonomy": "ingredient",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138454",
+          "@type": "Term",
+          "slug": "rhubarb",
+          "display": "rhubarb",
+          "taxonomy": "ingredient",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138455",
+          "@type": "Term",
+          "slug": "vanilla-extract",
+          "display": "vanilla extract",
+          "taxonomy": "ingredient",
+          "meta": []
+        }
+      ]
+    },
+    {
+      "@id": "/v1/taxonomies/42301234",
+      "@type": "Taxonomy",
+      "display": "Meal types",
+      "slug": "meal-type",
+      "terms": [
+        {
+          "@id": "/v1/terms/145138456",
+          "@type": "Term",
+          "slug": "afternoon-tea",
+          "display": "Afternoon tea",
+          "taxonomy": "meal-type",
+          "meta": []
+        },
+        {
+          "@id": "/v1/terms/145138457",
+          "@type": "Term",
+          "slug": "dessert",
+          "display": "Dessert",
+          "taxonomy": "meal-type",
+          "meta": []
+        }
+      ]
+    },
+    {
+      "@id": "/v1/taxonomies/42301235",
+      "@type": "Taxonomy",
+      "display": "Nutrition",
+      "slug": "nutrition",
+      "terms": [
+        {
+          "@id": "/v1/terms/145138458",
+          "@type": "Term",
+          "slug": "low-salt",
+          "display": "Low salt",
+          "taxonomy": "nutrition",
+          "meta": []
+        }
+      ]
+    },
+    {
+      "@id": "/v1/taxonomies/42301236",
+      "@type": "Taxonomy",
+      "display": "Occasions",
+      "slug": "occasion",
+      "terms": [
+        {
+          "@id": "/v1/terms/145138459",
+          "@type": "Term",
+          "slug": "party",
+          "display": "Party",
+          "taxonomy": "occasion",
+          "meta": []
+        }
+      ]
+    },
+    {
+      "@id": "/v1/taxonomies/42301237",
+      "@type": "Taxonomy",
+      "display": "Planning",
+      "slug": "planning",
+      "terms": [
+        {
+          "@id": "/v1/terms/145138460",
+          "@type": "Term",
+          "slug": "freezable",
+          "display": "Freezable",
+          "taxonomy": "planning",
+          "meta": []
+        }
+      ]
+    }
+  ],
+  "mantis": {
+    "categories": {
+      "iab": [{ "id": 217, "score": 0.997875 }],
+      "watson": [
+        { "label": "/food and drink/desserts and baking", "score": 0.997875 }
+      ],
+      "mantis": [
+        { "label": "food_drink", "score": 0.997875 },
+        { "label": "desserts_baking", "score": 0.997875 },
+        { "label": "xmas", "score": 0.997875 },
+        { "label": "halloween", "score": 0.997875 },
+        { "label": "dessert", "score": 0.960869 },
+        { "label": "desserts_baking", "score": 0.997875 },
+        { "label": "comfort_food", "score": 0.960869 },
+        { "label": "bike_nutrition", "score": 0.997875 }
+      ]
+    },
+    "concepts": [
+      { "text": "Baking" },
+      { "text": "Cake" },
+      { "text": "Leavening agent" },
+      { "text": "Heavy metal music" }
+    ],
+    "entities": [],
+    "keywords": [
+      { "text": "Heat oven" },
+      { "text": "C fan" },
+      { "text": "cake tin" },
+      { "text": "little of the butter" },
+      { "text": "rest of the cake batter" },
+      { "text": "sheet of foil" },
+      { "text": "mins" },
+      { "text": "Scatter" },
+      { "text": "crumble mix" },
+      { "text": "gas" }
+    ],
+    "sentiment": "positive",
+    "emotion": {
+      "anger": { "value": 0.052397, "level": "low" },
+      "disgust": { "value": 0.053855, "level": "low" },
+      "fear": { "value": 0.042353, "level": "low" },
+      "joy": { "value": 0.651832, "level": "high" },
+      "sadness": { "value": 0.088349, "level": "low" }
+    },
+    "ratings": [
+      { "customer": "Default", "rating": "GREEN" },
+      { "customer": "COVIDSafe", "rating": "GREEN" },
+      { "customer": "Volkswagen", "rating": "GREEN" },
+      { "customer": "SCD", "rating": "GREEN" },
+      { "customer": "MFM_Milk", "rating": "GREEN" },
+      { "customer": "MFM_Pregnancy", "rating": "GREEN" },
+      { "customer": "MFM_Serious_Illness", "rating": "GREEN" },
+      { "customer": "MFM_Getting_Pregnant", "rating": "GREEN" },
+      { "customer": "NestleBrands", "rating": "GREEN" },
+      { "customer": "Nestle", "rating": "GREEN" },
+      { "customer": "Omnicomdv", "rating": "GREEN" },
+      { "customer": "Diageo", "rating": "GREEN" },
+      { "customer": "Uber", "rating": "GREEN" },
+      { "customer": "Govtdv", "rating": "GREEN" },
+      { "customer": "Heineken", "rating": "RED" },
+      { "customer": "JandJ", "rating": "GREEN" },
+      { "customer": "Magna", "rating": "GREEN" },
+      { "customer": "TSB", "rating": "GREEN" },
+      { "customer": "LNERdv", "rating": "GREEN" },
+      { "customer": "Facebook_aden", "rating": "GREEN" },
+      { "customer": "strict_queen_BS", "rating": "GREEN" }
+    ]
+  },
+  "postFormat": "standard",
+  "showHeroImageOverlayIcon": false,
+  "gemius": null,
+  "c2cVars": null,
+  "relatedEdiPlayer": null,
+  "sponsorTracking": null,
+  "postMeta": {
+    "client": "bbcgoodfood",
+    "schemaId": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble-cake#Recipe",
+    "entity": "recipe",
+    "source": "content-api",
+    "clientId": "212043"
+  },
+  "pockets": {
+    "aboveFooter": [
+      {
+        "componentId": "footerPromotionalWidget",
+        "props": {
+          "data": {
+            "promosCount": "3",
+            "selectedTab": "1",
+            "promoTabs": [
+              {
+                "title": "Subscribe to our magazine",
+                "description": "Save 42% & receive a £10 M&S e-gift card!",
+                "buttonLink": "https://www.buysubscriptions.com/print/good-food-magazine-subscription?promo=GFBS324&utm_medium=brandsite&utm_source=goodfood.com&utm_campaign=ms_gfbs324&utm_content=footer-widget&style=brand",
+                "buttonText": "Order now",
+                "image": {
+                  "url": "https://images.immediate.co.uk/production/volatile/sites/30/2021/11/GDFDMarch180x180px-002-51ced24.jpg",
+                  "width": 180,
+                  "height": 180,
+                  "title": "GDFD_March_180x180px (002)",
+                  "aspectRatio": 1
+                }
+              },
+              {
+                "title": "Our mobile app",
+                "description": "Search, save and sort your favourite recipes and view them offline.",
+                "buttonLink": "https://immediate.onelink.me/OQap?af_web_dp=https%3A%2F%2Fwww.bbcgoodfood.com%2Fget-bbc-good-food-app&af_xp=custom&pid=website&c=footer_widget&is_retargeting=true",
+                "buttonText": "Get the app",
+                "image": {
+                  "url": "https://images.immediate.co.uk/production/volatile/sites/30/2022/11/app-promo-7ca4a67.jpg",
+                  "width": 836,
+                  "height": 836,
+                  "title": "BBC Good Food Premium App next to a pan of spaghetti and meatballs",
+                  "alt": "BBC Good Food Premium App next to a pan of spaghetti and meatballs",
+                  "aspectRatio": 1
+                }
+              },
+              {
+                "title": "Wine Club",
+                "description": "Join the Good Food Wine Club",
+                "buttonLink": "https://www.bbcgoodfoodwineclub.com/jsp/offer/recr/uk/common/landing.jsp?offerId=e52300414&promoCode=1783001&content=2019/1783001&cid=WEBOTHER/1783001/BBCGFWebQ3/JAN20/BBC",
+                "buttonText": "Order your first case",
+                "image": {
+                  "url": "https://images.immediate.co.uk/production/volatile/sites/30/2022/12/Wine-club-case-9619a91.jpg",
+                  "width": 3223,
+                  "height": 3223,
+                  "title": "BBC Good Food Wine Club",
+                  "alt": "BBC Good Food Wine Club",
+                  "aspectRatio": 1
+                }
+              }
+            ]
+          },
+          "widgetArea": "aboveFooter"
+        }
+      }
+    ],
+    "recipeActions": [{ "componentId": "savePostButton", "props": {} }],
+    "recipeBelowContent": [
+      {
+        "componentId": "outbrain",
+        "props": {
+          "data": { "widgetId": "AR_5" },
+          "widgetArea": "recipeBelowContent"
+        }
+      }
+    ],
+    "recipeContentBottom": [
+      {
+        "componentId": "reactions",
+        "props": {
+          "canonicalUrl": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble-cake",
+          "postData": {
+            "client": "bbcgoodfood",
+            "schemaId": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble-cake#Recipe",
+            "entity": "recipe",
+            "source": "content-api",
+            "clientId": "212043",
+            "postId": "212043",
+            "postType": "recipe"
+          },
+          "userRatings": { "avg": 4.6, "total": 68, "isHalfStar": false },
+          "variant": "feed"
+        }
+      }
+    ],
+    "recipeFooter": [
+      {
+        "componentId": "dynamicRelatedContent",
+        "props": {
+          "data": {
+            "title": "You may also like",
+            "limit": 8,
+            "showCardLabels": false,
+            "layout": "horizontal",
+            "hideOnMobile": false,
+            "smallCardTitles": false,
+            "categories": ["recipes"],
+            "type": ["sxs-recipe"],
+            "contentType": [],
+            "hidePublishDateOnCards": false
+          },
+          "widgetArea": "recipeFooter"
+        }
+      },
+      {
+        "componentId": "dynamicRelatedContent",
+        "props": {
+          "data": {
+            "title": "Related recipe collections",
+            "limit": 4,
+            "showCardLabels": null,
+            "layout": "horizontal",
+            "hideOnMobile": false,
+            "smallCardTitles": false,
+            "categories": [],
+            "type": ["list"],
+            "contentType": [],
+            "hidePublishDateOnCards": false
+          },
+          "widgetArea": "recipeFooter"
+        }
+      },
+      {
+        "componentId": "outbrain",
+        "props": {
+          "data": { "widgetId": "AR_2" },
+          "widgetArea": "recipeFooter"
+        }
+      }
+    ],
+    "recipeMasthead": [{ "componentId": "mastheadPromotional", "props": {} }],
+    "recipeMeta": [
+      {
+        "componentId": "reactions",
+        "props": {
+          "canonicalUrl": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble-cake",
+          "postData": {
+            "client": "bbcgoodfood",
+            "schemaId": "https://www.bbcgoodfood.com/recipes/rhubarb-crumble-cake#Recipe",
+            "entity": "recipe",
+            "source": "content-api",
+            "clientId": "212043",
+            "postId": "212043",
+            "postType": "recipe"
+          },
+          "userRatings": { "avg": 4.6, "total": 68, "isHalfStar": false },
+          "variant": "skiplink"
+        }
+      }
+    ],
+    "recipeSidebar": [
+      {
+        "componentId": "dynamicRelatedContent",
+        "props": {
+          "data": {
+            "title": "Related guides",
+            "limit": 4,
+            "showCardLabels": null,
+            "layout": "vertical",
+            "hideOnMobile": true,
+            "smallCardTitles": false,
+            "categories": [],
+            "type": [],
+            "contentType": [],
+            "hidePublishDateOnCards": false
+          },
+          "widgetArea": "recipeSidebar"
+        }
+      },
+      {
+        "componentId": "promotionalWidget",
+        "props": {
+          "data": {
+            "title": "March Subscription Offer",
+            "imagePosition": "default",
+            "buttonLink": "https://www.buysubscriptions.com/print/good-food-magazine-subscription?promo=GFBS324&utm_medium=brandsite&utm_source=goodfood.com&utm_campaign=ms_gfbs324&utm_content=sidebar-widget&style=brand",
+            "description": "<p>Subscribe today and get £10 to spend in M&amp;S with an e-gift card!</p>",
+            "buttonLabel": "Order now",
+            "linkTarget": "",
+            "image": {
+              "url": "https://images.immediate.co.uk/production/volatile/sites/30/2024/03/GDFDMarch1000x666px-80c871e.jpg",
+              "width": 1000,
+              "height": 666,
+              "title": "GDFD_March_1000x666px",
+              "aspectRatio": 0.666
+            },
+            "partnerImage": null
+          },
+          "widgetArea": "recipeSidebar"
+        }
+      }
+    ]
+  },
+  "adSettings": {
+    "unitName": "/176986657/bbcgoodfood.com",
+    "headerBidder": "prebid",
+    "headerBidderUrl": "//micro.rubiconproject.com/prebid/dynamic/7959.js",
+    "headerBidderTimeout": 3500,
+    "adRefresh": {
+      "enabled": false,
+      "excludedOrderIds": [
+        2754193328, 2728546557, 2777270073, 476475177, 2740501331
+      ],
+      "durationInView": 17,
+      "percentageInView": 50
+    },
+    "targets": { "configuration": ["live"] },
+    "lazyLoading": {
+      "enabled": false,
+      "renderMarginPercent": 35,
+      "mobileScaling": 0
+    },
+    "stitcher": { "disableAllAdvertising": false },
+    "nativeAdvertiser": "nova",
+    "promoPlacementId": ""
+  }
+}

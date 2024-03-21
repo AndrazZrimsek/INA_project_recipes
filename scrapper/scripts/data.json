@@ -1,0 +1,881 @@
+{
+  "tabs": [
+    {
+      "label": "Recipes",
+      "identifier": "recipe",
+      "isDefault": true,
+      "isCurrent": true
+    },
+    {
+      "label": "Video",
+      "identifier": "video",
+      "isDefault": false,
+      "isCurrent": false
+    },
+    {
+      "label": "Guides",
+      "identifier": "guides",
+      "isDefault": false,
+      "isCurrent": false
+    },
+    {
+      "label": "Recipe collections",
+      "identifier": "collection",
+      "isDefault": false,
+      "isCurrent": false
+    },
+    {
+      "label": "Glossary",
+      "identifier": "glossary",
+      "isDefault": false,
+      "isCurrent": false
+    },
+    {
+      "label": "Reviews",
+      "identifier": "review",
+      "isDefault": false,
+      "isCurrent": false
+    }
+  ],
+  "targeting": { "dfp": { "subcat": "search" } },
+  "filters": [
+    {
+      "label": "Meal type",
+      "name": "mealType",
+      "defaultValues": [],
+      "options": [
+        { "value": "afternoon-tea", "label": "Afternoon tea", "count": 1270 },
+        { "value": "breads", "label": "Breads", "count": 2 },
+        { "value": "breakfast", "label": "Breakfast", "count": 661 },
+        { "value": "brunch", "label": "Brunch", "count": 558 },
+        { "value": "buffet", "label": "Buffet", "count": 1169 },
+        { "value": "canapes", "label": "Canapes", "count": 300 },
+        { "value": "cheese-course", "label": "Cheese Course", "count": 10 },
+        { "value": "cocktails", "label": "Cocktails", "count": 248 },
+        { "value": "condiment", "label": "Condiment", "count": 367 },
+        { "value": "dessert", "label": "Dessert", "count": 2800 },
+        { "value": "dinner", "label": "Dinner", "count": 7666 },
+        { "value": "drink", "label": "Drink", "count": 545 },
+        { "value": "fish-course", "label": "Fish Course", "count": 132 },
+        { "value": "lunch", "label": "Lunch", "count": 3828 },
+        { "value": "main-course", "label": "Main course", "count": 5193 },
+        { "value": "pasta", "label": "Pasta", "count": 321 },
+        { "value": "side-dish", "label": "Side dish", "count": 2308 },
+        { "value": "snack", "label": "Snack", "count": 1572 },
+        { "value": "soup", "label": "Soup", "count": 328 },
+        { "value": "starter", "label": "Starter", "count": 1152 },
+        { "value": "supper", "label": "Supper", "count": 3198 },
+        { "value": "treat", "label": "Treat", "count": 1732 },
+        { "value": "vegetable", "label": "Vegetable", "count": 301 },
+        { "value": "baking", "label": "baking", "count": 1 },
+        { "value": "flatbreads", "label": "flatbreads", "count": 1 },
+        { "value": "picnic", "label": "picnic", "count": 1 },
+        { "value": "side", "label": "side", "count": 4 }
+      ]
+    },
+    {
+      "label": "Total time",
+      "name": "totalTime",
+      "type": "radio",
+      "defaultValues": [],
+      "options": [
+        { "value": "lt-900", "label": "Under 15 minutes", "count": 1645 },
+        { "value": "lt-1800", "label": "Under 30 minutes", "count": 5116 },
+        { "value": "lt-2700", "label": "Under 45 minutes", "count": 8632 },
+        { "value": "lt-3600", "label": "Under 1 hour", "count": 11044 },
+        { "value": "gte-3600", "label": "1 hour or more", "count": 5412 }
+      ]
+    },
+    {
+      "label": "Diets",
+      "name": "diet",
+      "defaultValues": [],
+      "options": [
+        { "value": "vegetarian", "label": "Vegetarian", "count": 6398 },
+        { "value": "gluten-free", "label": "Gluten-free", "count": 2920 },
+        { "value": "healthy", "label": "Healthy", "count": 2341 },
+        { "value": "vegan", "label": "Vegan", "count": 1340 },
+        { "value": "egg-free", "label": "Egg-free", "count": 872 },
+        { "value": "dairy-free", "label": "Dairy-free", "count": 856 },
+        { "value": "nut-free", "label": "Nut-free", "count": 364 },
+        { "value": "low-calorie", "label": "Low calorie", "count": 206 },
+        { "value": "low-sugar", "label": "Low sugar", "count": 200 },
+        { "value": "low-fat", "label": "Low fat", "count": 159 },
+        { "value": "high-protein", "label": "High-protein", "count": 139 },
+        { "value": "high-fibre", "label": "High-fibre", "count": 100 },
+        { "value": "keto", "label": "Keto", "count": 56 },
+        { "value": "low-carb", "label": "Low carb", "count": 32 }
+      ]
+    },
+    {
+      "label": "Difficulty",
+      "name": "difficulty",
+      "defaultValues": [],
+      "options": [
+        { "value": "easy", "label": "Easy", "count": 13939 },
+        { "value": "more-effort", "label": "More effort", "count": 2205 },
+        { "value": "a-challenge", "label": "A challenge", "count": 264 }
+      ]
+    },
+    {
+      "label": "Cuisine",
+      "name": "cuisine",
+      "defaultValues": [],
+      "options": [
+        { "value": "afghan", "label": "Afghan", "count": 2 },
+        { "value": "african", "label": "African", "count": 15 },
+        { "value": "american", "label": "American", "count": 382 },
+        { "value": "asian", "label": "Asian", "count": 295 },
+        { "value": "australian", "label": "Australian", "count": 45 },
+        { "value": "austrian", "label": "Austrian", "count": 2 },
+        { "value": "azerbaijan", "label": "Azerbaijan", "count": 1 },
+        { "value": "balinese", "label": "Balinese", "count": 4 },
+        { "value": "belgian", "label": "Belgian", "count": 3 },
+        { "value": "brazilian", "label": "Brazilian", "count": 30 },
+        { "value": "british", "label": "British", "count": 4379 },
+        { "value": "cajun-creole", "label": "Cajun & Creole", "count": 31 },
+        { "value": "caribbean", "label": "Caribbean", "count": 61 },
+        { "value": "chilean", "label": "Chilean", "count": 1 },
+        { "value": "chinese", "label": "Chinese", "count": 265 },
+        { "value": "cuban", "label": "Cuban", "count": 1 },
+        { "value": "czech", "label": "Czech", "count": 2 },
+        { "value": "danish", "label": "Danish", "count": 5 },
+        {
+          "value": "eastern-european",
+          "label": "Eastern European",
+          "count": 24
+        },
+        { "value": "egyptian", "label": "Egyptian", "count": 1 },
+        { "value": "english", "label": "English", "count": 147 },
+        { "value": "finland", "label": "Finland", "count": 1 },
+        { "value": "french", "label": "French", "count": 663 },
+        { "value": "german", "label": "German", "count": 49 },
+        { "value": "greek", "label": "Greek", "count": 135 },
+        { "value": "hungarian", "label": "Hungarian", "count": 6 },
+        { "value": "indian", "label": "Indian", "count": 536 },
+        { "value": "indonesian", "label": "Indonesian", "count": 2 },
+        { "value": "irish", "label": "Irish", "count": 40 },
+        { "value": "italian", "label": "Italian", "count": 999 },
+        { "value": "jamaican", "label": "Jamaican", "count": 7 },
+        { "value": "japanese", "label": "Japanese", "count": 84 },
+        { "value": "jewish", "label": "Jewish", "count": 19 },
+        { "value": "korean", "label": "Korean", "count": 31 },
+        { "value": "latin-american", "label": "Latin American", "count": 16 },
+        { "value": "lithuanian", "label": "Lithuanian", "count": 1 },
+        { "value": "mediterranean", "label": "Mediterranean", "count": 301 },
+        { "value": "mexican", "label": "Mexican", "count": 283 },
+        { "value": "middle-eastern", "label": "Middle Eastern", "count": 216 },
+        { "value": "moroccan", "label": "Moroccan", "count": 187 },
+        { "value": "nepalese", "label": "Nepalese", "count": 1 },
+        { "value": "nigerian", "label": "Nigerian", "count": 1 },
+        { "value": "north-african", "label": "North African", "count": 20 },
+        { "value": "persian", "label": "Persian", "count": 10 },
+        { "value": "peruvian", "label": "Peruvian", "count": 1 },
+        { "value": "polish", "label": "Polish", "count": 15 },
+        { "value": "portuguese", "label": "Portuguese", "count": 10 },
+        { "value": "scandinavian", "label": "Scandinavian", "count": 36 },
+        { "value": "scottish", "label": "Scottish", "count": 38 },
+        { "value": "senegalese", "label": "Senegalese", "count": 1 },
+        { "value": "southern-soul", "label": "Southern & Soul", "count": 3 },
+        { "value": "spanish", "label": "Spanish", "count": 217 },
+        { "value": "sri-lankan", "label": "Sri lankan", "count": 1 },
+        { "value": "swedish", "label": "Swedish", "count": 34 },
+        { "value": "swiss", "label": "Swiss", "count": 10 },
+        { "value": "taiwanese", "label": "Taiwanese", "count": 4 },
+        { "value": "thai", "label": "Thai", "count": 208 },
+        { "value": "tunisian", "label": "Tunisian", "count": 2 },
+        { "value": "turkish", "label": "Turkish", "count": 27 },
+        { "value": "ukrainian", "label": "Ukrainian", "count": 1 },
+        { "value": "vietnamese", "label": "Vietnamese", "count": 35 },
+        { "value": "welsh", "label": "Welsh", "count": 1 },
+        { "value": "balkan", "label": "balkan", "count": 1 }
+      ]
+    },
+    {
+      "label": "Ratings",
+      "name": "ratings",
+      "defaultValues": [],
+      "options": [
+        { "value": "gte-1", "label": "1+ Star", "count": 15272 },
+        { "value": "gte-2", "label": "2+ Star", "count": 15166 },
+        { "value": "gte-3", "label": "3+ Star", "count": 14814 },
+        { "value": "gte-4", "label": "4+ Star", "count": 12219 },
+        { "value": "gte-5", "label": "5+ Star", "count": 2558 }
+      ]
+    },
+    {
+      "label": "Servings",
+      "name": "servings",
+      "defaultValues": [],
+      "options": [
+        { "value": "gte-1", "label": "1+ Servings", "count": 12585 },
+        { "value": "gte-2", "label": "2+ Servings", "count": 12041 },
+        { "value": "gte-3", "label": "3+ Servings", "count": 9872 },
+        { "value": "gte-4", "label": "4+ Servings", "count": 9758 },
+        { "value": "gte-5", "label": "5+ Servings", "count": 4956 },
+        { "value": "gte-6", "label": "6+ Servings", "count": 4891 },
+        { "value": "gte-7", "label": "7+ Servings", "count": 2661 },
+        { "value": "gte-8", "label": "8+ Servings", "count": 2656 }
+      ]
+    },
+    {
+      "label": "Author",
+      "name": "author",
+      "defaultValues": [],
+      "options": [
+        { "value": "adambush", "label": "Adam Bush", "count": 27 },
+        { "value": "ailsabrown", "label": "Ailsa Brown", "count": 22 },
+        { "value": "ailsaburt", "label": "Ailsa Burt", "count": 194 },
+        { "value": "alicelascelles", "label": "Alice Lascelles", "count": 11 },
+        { "value": "angelaboggiano", "label": "Angela Boggiano", "count": 34 },
+        { "value": "angelanilsen", "label": "Angela Nilsen", "count": 152 },
+        { "value": "anjumanand", "label": "Anjum Anand", "count": 17 },
+        { "value": "annaglover", "label": "Anna Glover", "count": 266 },
+        { "value": "apetitonline", "label": "Apetit Online", "count": 20 },
+        {
+          "value": "barneydesmazery",
+          "label": "Barney Desmazery",
+          "count": 967
+        },
+        {
+          "value": "benjaminaebuehi",
+          "label": "Benjamina Ebuehi",
+          "count": 10
+        },
+        { "value": "billgranger", "label": "Bill Granger", "count": 10 },
+        { "value": "cjjackson", "label": "CJ Jackson", "count": 33 },
+        {
+          "value": "carmelitacaruana",
+          "label": "Carmelita Caruana",
+          "count": 10
+        },
+        { "value": "carolinabriceno", "label": "Carolina Briceno", "count": 9 },
+        {
+          "value": "carolinehire",
+          "label": "Caroline Hire – Food writer",
+          "count": 86
+        },
+        { "value": "cassiebest", "label": "Cassie Best", "count": 1018 },
+        { "value": "catedixon", "label": "Cate Dixon", "count": 15 },
+        { "value": "cathrynevans", "label": "Cathryn Evans", "count": 16 },
+        {
+          "value": "celiabrooksbrown",
+          "label": "Celia Brooks Brown",
+          "count": 17
+        },
+        { "value": "charlieclapp", "label": "Charlie Clapp", "count": 18 },
+        { "value": "charlottepike", "label": "Charlotte Pike", "count": 27 },
+        { "value": "chelsiecollins", "label": "Chelsie Collins", "count": 171 },
+        { "value": "chetnamakan", "label": "Chetna Makan", "count": 12 },
+        { "value": "chinghehuang", "label": "Ching-He Huang", "count": 19 },
+        { "value": "clairethomson", "label": "Claire Thomson", "count": 33 },
+        { "value": "dianahenry", "label": "Diana Henry", "count": 169 },
+        { "value": "edsmith", "label": "Ed Smith", "count": 13 },
+        { "value": "eddkimber", "label": "Edd Kimber", "count": 36 },
+        {
+          "value": "einfachbackenteam",
+          "label": "Einfach Backen Team",
+          "count": 16
+        },
+        { "value": "elenasilcock", "label": "Elena Silcock", "count": 168 },
+        { "value": "emilykydd", "label": "Emily Kydd", "count": 28 },
+        { "value": "emmafreud", "label": "Emma Freud", "count": 37 },
+        { "value": "emmalewis", "label": "Emma Lewis", "count": 131 },
+        { "value": "estherclark", "label": "Esther Clark", "count": 622 },
+        { "value": "francesquinn", "label": "Frances Quinn", "count": 11 },
+        { "value": "garyrhodes", "label": "Gary Rhodes", "count": 42 },
+        { "value": "georginafuggle", "label": "Georgina Fuggle", "count": 21 },
+        { "value": "georginakiely", "label": "Georgina Kiely", "count": 28 },
+        { "value": "geraldeneholt", "label": "Geraldene Holt", "count": 9 },
+        { "value": "gerardbaker", "label": "Gerard Baker", "count": 10 },
+        { "value": "goodfood", "label": "Good Food team", "count": 4057 },
+        { "value": "gordonramsay", "label": "Gordon Ramsay", "count": 132 },
+        { "value": "greggwallace", "label": "Gregg Wallace", "count": 10 },
+        {
+          "value": "helenabusiakiewicz",
+          "label": "Helena Busiakiewicz",
+          "count": 78
+        },
+        { "value": "jamesmartin", "label": "James Martin", "count": 223 },
+        { "value": "janedunn", "label": "Jane Dunn", "count": 9 },
+        { "value": "janehornby", "label": "Jane Hornby", "count": 416 },
+        { "value": "jemmamorphet", "label": "Jemma Morphet", "count": 17 },
+        { "value": "jenniferirvine", "label": "Jennifer Irvine", "count": 33 },
+        { "value": "jenniferjoyce", "label": "Jennifer Joyce", "count": 230 },
+        { "value": "jennywhite", "label": "Jenny White", "count": 26 },
+        { "value": "jopratt", "label": "Jo Pratt", "count": 21 },
+        { "value": "joewicks", "label": "Joe Wicks", "count": 9 },
+        { "value": "johntorode", "label": "John Torode", "count": 205 },
+        { "value": "julietsear", "label": "Juliet Sear", "count": 34 },
+        {
+          "value": "justinepattison",
+          "label": "Justine Pattison",
+          "count": 53
+        },
+        { "value": "katiehiscock1", "label": "Katie Hiscock", "count": 41 },
+        { "value": "katiemarshall", "label": "Katie Marshall", "count": 13 },
+        { "value": "katygilhooly", "label": "Katy Gilhooly", "count": 103 },
+        { "value": "katygreenwood", "label": "Katy Greenwood", "count": 109 },
+        { "value": "kenhom", "label": "Ken Hom", "count": 16 },
+        { "value": "lesleywaters", "label": "Lesley Waters", "count": 97 },
+        { "value": "libertymendez", "label": "Liberty Mendez", "count": 190 },
+        { "value": "linzipucino", "label": "Linzi Pucino", "count": 12 },
+        { "value": "lizzieharris", "label": "Lizzie Harris", "count": 14 },
+        { "value": "lucynetherton", "label": "Lucy Netherton", "count": 97 },
+        { "value": "lucyroxburgh", "label": "Lucy Roxburgh", "count": 11 },
+        { "value": "lulugrimes", "label": "Lulu Grimes", "count": 262 },
+        { "value": "mariaelia", "label": "Maria Elia", "count": 18 },
+        { "value": "marycadogan", "label": "Mary Cadogan", "count": 476 },
+        { "value": "matttebbutt", "label": "Matt Tebbutt", "count": 32 },
+        {
+          "value": "melissathompson",
+          "label": "Melissa Thompson – Journalist and food writer",
+          "count": 46
+        },
+        {
+          "value": "merrileesparker",
+          "label": "Merrilees Parker",
+          "count": 51
+        },
+        { "value": "miriamnice", "label": "Miriam Nice", "count": 556 },
+        {
+          "value": "mojegotowanieteam",
+          "label": "Moje Gotowanie team",
+          "count": 30
+        },
+        { "value": "nadinebrown", "label": "Nadine Brown", "count": 15 },
+        { "value": "nadiyahussain", "label": "Nadiya Hussain", "count": 12 },
+        { "value": "orlandomurrin", "label": "Orlando Murrin", "count": 39 },
+        { "value": "paulhollywood", "label": "Paul Hollywood", "count": 10 },
+        { "value": "raymondblanc", "label": "Raymond Blanc", "count": 20 },
+        { "value": "roopagulati", "label": "Roopa Gulati", "count": 72 },
+        { "value": "rosiebirkett", "label": "Rosie Birkett", "count": 189 },
+        { "value": "ruthwatson", "label": "Ruth Watson", "count": 36 },
+        { "value": "sabrinaghayour", "label": "Sabrina Ghayour", "count": 15 },
+        {
+          "value": "samuelgoldsmith",
+          "label": "Samuel Goldsmith",
+          "count": 218
+        },
+        { "value": "sarabuenfeld", "label": "Sara Buenfeld", "count": 973 },
+        { "value": "sarahcook", "label": "Sarah Cook", "count": 539 },
+        { "value": "shiviramoutar", "label": "Shivi Ramoutar", "count": 32 },
+        { "value": "silvanafranco", "label": "Silvana Franco", "count": 114 },
+        {
+          "value": "sophiegodwin",
+          "label": "Sophie Godwin – Cookery writer",
+          "count": 351
+        },
+        { "value": "thomasinamiers", "label": "Thomasina Miers", "count": 10 },
+        { "value": "tomkerridge", "label": "Tom Kerridge", "count": 332 },
+        { "value": "tommybanks", "label": "Tommy Banks", "count": 14 },
+        { "value": "tonytobin", "label": "Tony Tobin", "count": 13 },
+        { "value": "valeriebarrett", "label": "Valerie Barrett", "count": 23 },
+        { "value": "victoriaprever", "label": "Victoria Prever", "count": 27 },
+        { "value": "vuyelondlovu", "label": "Vuyelo Ndlovu", "count": 11 },
+        { "value": "xantheclay", "label": "Xanthe Clay", "count": 17 },
+        { "value": "chintalpatel", "label": "chintalpatel", "count": 16 }
+      ]
+    },
+    {
+      "label": "Calories",
+      "name": "calories",
+      "type": "slider",
+      "defaultValues": [],
+      "options": [
+        { "value": "lt-250", "label": "Up to 250 kcal", "count": 4822 },
+        { "value": "lt-500", "label": "Up to 500 kcal", "count": 11461 },
+        { "value": "lt-750", "label": "Up to 750 kcal", "count": 15319 },
+        { "value": "lt-1000", "label": "Up to 1000 kcal", "count": 16202 },
+        { "value": "lt-1250", "label": "Up to 1250 kcal", "count": 16328 },
+        { "value": "lt-1500", "label": "Up to 1500 kcal", "count": 16353 },
+        { "value": "gte-1500", "label": "Over 1500 kcal", "count": 2 }
+      ]
+    }
+  ],
+  "searchResults": {
+    "items": [
+      {
+        "title": "Chilli con carne recipe",
+        "headingStyledSize": 4,
+        "showTitleIcon": false,
+        "showOverlayIcon": false,
+        "contentType": null,
+        "theme": null,
+        "id": "233480",
+        "label": null,
+        "kicker": null,
+        "postFormat": "standard",
+        "rating": {
+          "ratingValue": 4.8,
+          "ratingCount": 2603,
+          "ratingTypeLabel": "rating",
+          "hasRatingCount": true,
+          "isHalfStar": false
+        },
+        "url": "/recipes/chilli-con-carne-recipe",
+        "isPremium": false,
+        "subscriptionExperience": "default",
+        "image": {
+          "aspectRatio": 0.9087301587301587,
+          "height": 400,
+          "width": 440,
+          "alt": "Chilli con carne cooking in a pan with chocolate melting on top",
+          "title": "Chilli con carne",
+          "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1001451_6-c8d72b8.jpg"
+        },
+        "postType": "recipe",
+        "description": "<p>This great chilli recipe has to be one of the best dishes to serve to friends for a casual get-together. An easy sharing favourite that uses up storecupboard ingredients.</p>",
+        "terms": [
+          { "slug": "time", "display": "1 hr 10 mins" },
+          { "slug": "skillLevel", "display": "Easy" }
+        ]
+      },
+      {
+        "title": "Best ever chocolate brownies recipe",
+        "headingStyledSize": 4,
+        "showTitleIcon": false,
+        "showOverlayIcon": true,
+        "contentType": "video",
+        "theme": null,
+        "id": "220633",
+        "label": null,
+        "kicker": null,
+        "postFormat": "video",
+        "rating": {
+          "ratingValue": 4.8,
+          "ratingCount": 2596,
+          "ratingTypeLabel": "rating",
+          "hasRatingCount": true,
+          "isHalfStar": false
+        },
+        "url": "/recipes/best-ever-chocolate-brownies-recipe",
+        "isPremium": false,
+        "subscriptionExperience": "default",
+        "image": {
+          "aspectRatio": 0.9087301587301587,
+          "height": 400,
+          "width": 440,
+          "alt": "Brownies being held up on a plate",
+          "title": "Best ever brownies",
+          "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1001464_11-ed687dd.jpg"
+        },
+        "postType": "recipe",
+        "description": "<p>A super easy brownie recipe for a squidgy chocolate bake. Watch our foolproof recipe video to help you get a perfect traybake every time.</p>",
+        "terms": [
+          { "slug": "time", "display": "1 hr" },
+          { "slug": "skillLevel", "display": "More effort" }
+        ]
+      },
+      {
+        "title": "Chicken & chorizo jambalaya",
+        "headingStyledSize": 4,
+        "showTitleIcon": false,
+        "showOverlayIcon": false,
+        "contentType": null,
+        "theme": null,
+        "id": "233479",
+        "label": null,
+        "kicker": null,
+        "postFormat": "standard",
+        "rating": {
+          "ratingValue": 4.75,
+          "ratingCount": 2617,
+          "ratingTypeLabel": "rating",
+          "hasRatingCount": true,
+          "isHalfStar": false
+        },
+        "url": "/recipes/chicken-chorizo-jambalaya",
+        "isPremium": false,
+        "subscriptionExperience": "default",
+        "image": {
+          "aspectRatio": 0.9087301587301587,
+          "height": 400,
+          "width": 440,
+          "alt": "Chicken & chorizo jambalaya in a shallow cast iron dish with wooden spoon",
+          "title": "Chicken &amp; chorizo jambalaya",
+          "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1274503_8-05ae02b.jpg"
+        },
+        "postType": "recipe",
+        "description": "<p>A healthy Cajun-inspired rice pot recipe that's bursting with spicy Spanish sausage, sweet peppers and tomatoes</p>",
+        "terms": [
+          { "slug": "time", "display": "55 mins" },
+          { "slug": "skillLevel", "display": "Easy" },
+          { "slug": "healthy", "display": "Healthy" }
+        ]
+      },
+      {
+        "title": "Lemon drizzle cake",
+        "headingStyledSize": 4,
+        "showTitleIcon": false,
+        "showOverlayIcon": false,
+        "contentType": null,
+        "theme": null,
+        "id": "235221",
+        "label": null,
+        "kicker": null,
+        "postFormat": "standard",
+        "rating": {
+          "ratingValue": 4.65,
+          "ratingCount": 2827,
+          "ratingTypeLabel": "rating",
+          "hasRatingCount": true,
+          "isHalfStar": false
+        },
+        "url": "/recipes/lemon-drizzle-cake",
+        "isPremium": false,
+        "subscriptionExperience": "default",
+        "image": {
+          "aspectRatio": 0.9087301587301587,
+          "height": 400,
+          "width": 440,
+          "alt": "Lemon drizzle cake loaf on a pretty platter",
+          "title": "Lemon drizzle cake",
+          "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1238452_7-35e4911.jpg"
+        },
+        "postType": "recipe",
+        "description": "<p>It's difficult not to demolish this classic lemon drizzle in just one sitting, so why not make two at once?</p>",
+        "terms": [
+          { "slug": "time", "display": "45 mins" },
+          { "slug": "skillLevel", "display": "Easy" }
+        ]
+      },
+      {
+        "title": "Banana bread",
+        "headingStyledSize": 4,
+        "showTitleIcon": false,
+        "showOverlayIcon": true,
+        "contentType": "video",
+        "theme": null,
+        "id": "233531",
+        "label": null,
+        "kicker": null,
+        "postFormat": "video",
+        "rating": {
+          "ratingValue": 4.45,
+          "ratingCount": 1836,
+          "ratingTypeLabel": "rating",
+          "hasRatingCount": true,
+          "isHalfStar": false
+        },
+        "url": "/recipes/brilliant-banana-loaf",
+        "isPremium": false,
+        "subscriptionExperience": "default",
+        "image": {
+          "aspectRatio": 0.9087301587301587,
+          "height": 400,
+          "width": 440,
+          "alt": "Sliced banana bread topped with drizzle and banana chips on a serving plate",
+          "title": "Banana bread",
+          "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/06/recipe-image-legacy-id-1273522_8-a6b9246.jpg"
+        },
+        "postType": "recipe",
+        "description": "<p>A cross between banana bread and a drizzle cake, this easy banana loaf recipe is a quick bake that can be frozen. It's great for using up overripe bananas, too.</p>",
+        "terms": [
+          { "slug": "time", "display": "1 hr 5 mins" },
+          { "slug": "skillLevel", "display": "Easy" }
+        ]
+      },
+      {
+        "title": "Classic scones with jam & clotted cream",
+        "headingStyledSize": 4,
+        "showTitleIcon": false,
+        "showOverlayIcon": true,
+        "contentType": "video",
+        "theme": null,
+        "id": "227847",
+        "label": null,
+        "kicker": null,
+        "postFormat": "video",
+        "rating": {
+          "ratingValue": 4.8,
+          "ratingCount": 1389,
+          "ratingTypeLabel": "rating",
+          "hasRatingCount": true,
+          "isHalfStar": false
+        },
+        "url": "/recipes/classic-scones-jam-clotted-cream",
+        "isPremium": false,
+        "subscriptionExperience": "default",
+        "image": {
+          "aspectRatio": 0.9087301587301587,
+          "height": 400,
+          "width": 440,
+          "alt": "Scones with jam & clotted cream on a plate",
+          "title": "Classic scones with jam and clotted cream",
+          "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1001500_10-16f94ee.jpg"
+        },
+        "postType": "recipe",
+        "description": "<p>You can have a batch of scones on the table in 20 minutes with Jane Hornby's storecupboard recipe, perfect for unexpected guests</p>",
+        "terms": [
+          { "slug": "time", "display": "15 mins" },
+          { "slug": "skillLevel", "display": "Easy" }
+        ]
+      },
+      {
+        "title": "Ultimate chocolate cake",
+        "headingStyledSize": 4,
+        "showTitleIcon": false,
+        "showOverlayIcon": false,
+        "contentType": null,
+        "theme": null,
+        "id": "233617",
+        "label": null,
+        "kicker": null,
+        "postFormat": "standard",
+        "rating": {
+          "ratingValue": 4.65,
+          "ratingCount": 1436,
+          "ratingTypeLabel": "rating",
+          "hasRatingCount": true,
+          "isHalfStar": false
+        },
+        "url": "/recipes/ultimate-chocolate-cake",
+        "isPremium": false,
+        "subscriptionExperience": "default",
+        "image": {
+          "aspectRatio": 0.9087301587301587,
+          "height": 400,
+          "width": 440,
+          "alt": "Ultimate chocolate cake topped with chocolate curls",
+          "title": "Ultimate chocolate cake",
+          "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1043451_11-4713959.jpg"
+        },
+        "postType": "recipe",
+        "description": "<p>Indulge yourself with this ultimate chocolate ganache cake recipe that is beautifully moist, rich and fudgy. Perfect for a celebration or an afternoon tea</p>",
+        "terms": [
+          { "slug": "time", "display": "2 hrs 10 mins" },
+          { "slug": "skillLevel", "display": "Easy" }
+        ]
+      },
+      {
+        "title": "Carrot cake",
+        "headingStyledSize": 4,
+        "showTitleIcon": false,
+        "showOverlayIcon": false,
+        "contentType": null,
+        "theme": null,
+        "id": "233489",
+        "label": null,
+        "kicker": null,
+        "postFormat": "standard",
+        "rating": {
+          "ratingValue": 4.7,
+          "ratingCount": 1242,
+          "ratingTypeLabel": "rating",
+          "hasRatingCount": true,
+          "isHalfStar": false
+        },
+        "url": "/recipes/yummy-scrummy-carrot-cake-recipe",
+        "isPremium": false,
+        "subscriptionExperience": "default",
+        "image": {
+          "aspectRatio": 0.9087301587301587,
+          "height": 400,
+          "width": 440,
+          "alt": "Slices of yummy scrummy carrot cake on brown baking paper",
+          "title": "Yummy scrummy carrot cake",
+          "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/yummy-scrummy-carrot-cake_1-964d640.jpg"
+        },
+        "postType": "recipe",
+        "description": "<p>Delight friends with an afternoon tea that includes this easy carrot cake. You can bake the cake, freeze it and just drizzle over the icing on the day</p>",
+        "terms": [
+          { "slug": "time", "display": "1 hr 15 mins" },
+          { "slug": "skillLevel", "display": "Easy" }
+        ]
+      },
+      {
+        "title": "Best Yorkshire puddings",
+        "headingStyledSize": 4,
+        "showTitleIcon": false,
+        "showOverlayIcon": true,
+        "contentType": "video",
+        "theme": null,
+        "id": "233062",
+        "label": null,
+        "kicker": null,
+        "postFormat": "video",
+        "rating": {
+          "ratingValue": 4.85,
+          "ratingCount": 1127,
+          "ratingTypeLabel": "rating",
+          "hasRatingCount": true,
+          "isHalfStar": false
+        },
+        "url": "/recipes/best-yorkshire-puddings",
+        "isPremium": false,
+        "subscriptionExperience": "default",
+        "image": {
+          "aspectRatio": 0.9087301587301587,
+          "height": 400,
+          "width": 440,
+          "alt": "Four Yorkshire puddings in a baking tin",
+          "title": "Best Yorkshire puddings",
+          "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-901451_9-687c42b.jpg"
+        },
+        "postType": "recipe",
+        "description": "<p>The secret to getting gloriously puffed-up Yorkshire puddings is to have the fat sizzling hot and don't open the oven door!</p>",
+        "terms": [
+          { "slug": "time", "display": "25 mins" },
+          { "slug": "skillLevel", "display": "Easy" },
+          { "slug": "vegetarian", "display": "Vegetarian" }
+        ]
+      },
+      {
+        "title": "Spiced carrot & lentil soup",
+        "headingStyledSize": 4,
+        "showTitleIcon": false,
+        "showOverlayIcon": false,
+        "contentType": null,
+        "theme": null,
+        "id": "233803",
+        "label": null,
+        "kicker": null,
+        "postFormat": "standard",
+        "rating": {
+          "ratingValue": 4.55,
+          "ratingCount": 1332,
+          "ratingTypeLabel": "rating",
+          "hasRatingCount": true,
+          "isHalfStar": false
+        },
+        "url": "/recipes/spiced-carrot-lentil-soup",
+        "isPremium": false,
+        "subscriptionExperience": "default",
+        "image": {
+          "aspectRatio": 0.9087301587301587,
+          "height": 400,
+          "width": 440,
+          "alt": "Spiced carrot & lentil soup in a bowl",
+          "title": "Spiced carrot and lentil soup",
+          "url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1074500_11-ee0d41a.jpg"
+        },
+        "postType": "recipe",
+        "description": "<p>A delicious, spicy blend packed full of iron and low in fat to boot. It's ready in under half an hour, or can be made in a slow cooker</p>",
+        "terms": [
+          { "slug": "time", "display": "25 mins" },
+          { "slug": "skillLevel", "display": "Easy" },
+          { "slug": "healthy", "display": "Healthy" },
+          { "slug": "vegetarian", "display": "Vegetarian" }
+        ]
+      }
+    ],
+    "totalItems": 10000,
+    "limit": 10,
+    "nextUrl": "https://www.bbcgoodfood.com/api/search-frontend/search?q=&tab=recipe&sort=rating&page=2&limit=10",
+    "previousUrl": null
+  },
+  "sort": [
+    { "text": "Most relevant", "value": "relevant", "selected": false },
+    { "text": "Latest added", "value": "published", "selected": false },
+    { "text": "Most popular", "value": "rating", "selected": true },
+    { "text": "Quickest", "value": "quickest", "selected": false }
+  ],
+  "isListView": true,
+  "searchUrl": "/api/search-frontend/search?q=&tab=recipe&sort=rating&page=1&limit=10",
+  "pockets": {
+    "aboveFooter": [
+      {
+        "componentId": "footerPromotionalWidget",
+        "props": {
+          "data": {
+            "promosCount": "3",
+            "selectedTab": "1",
+            "promoTabs": [
+              {
+                "title": "Subscribe to our magazine",
+                "description": "Save 42% & receive a £10 M&S e-gift card!",
+                "buttonLink": "https://www.buysubscriptions.com/print/good-food-magazine-subscription?promo=GFBS324&utm_medium=brandsite&utm_source=goodfood.com&utm_campaign=ms_gfbs324&utm_content=footer-widget&style=brand",
+                "buttonText": "Order now",
+                "image": {
+                  "url": "https://images.immediate.co.uk/production/volatile/sites/30/2021/11/GDFDMarch180x180px-002-51ced24.jpg",
+                  "width": 180,
+                  "height": 180,
+                  "title": "GDFD_March_180x180px (002)",
+                  "aspectRatio": 1
+                }
+              },
+              {
+                "title": "Our mobile app",
+                "description": "Search, save and sort your favourite recipes and view them offline.",
+                "buttonLink": "https://immediate.onelink.me/OQap?af_web_dp=https%3A%2F%2Fwww.bbcgoodfood.com%2Fget-bbc-good-food-app&af_xp=custom&pid=website&c=footer_widget&is_retargeting=true",
+                "buttonText": "Get the app",
+                "image": {
+                  "url": "https://images.immediate.co.uk/production/volatile/sites/30/2022/11/app-promo-7ca4a67.jpg",
+                  "width": 836,
+                  "height": 836,
+                  "title": "BBC Good Food Premium App next to a pan of spaghetti and meatballs",
+                  "alt": "BBC Good Food Premium App next to a pan of spaghetti and meatballs",
+                  "aspectRatio": 1
+                }
+              },
+              {
+                "title": "Wine Club",
+                "description": "Join the Good Food Wine Club",
+                "buttonLink": "https://www.bbcgoodfoodwineclub.com/jsp/offer/recr/uk/common/landing.jsp?offerId=e52300414&promoCode=1783001&content=2019/1783001&cid=WEBOTHER/1783001/BBCGFWebQ3/JAN20/BBC",
+                "buttonText": "Order your first case",
+                "image": {
+                  "url": "https://images.immediate.co.uk/production/volatile/sites/30/2022/12/Wine-club-case-9619a91.jpg",
+                  "width": 3223,
+                  "height": 3223,
+                  "title": "BBC Good Food Wine Club",
+                  "alt": "BBC Good Food Wine Club",
+                  "aspectRatio": 1
+                }
+              }
+            ]
+          },
+          "widgetArea": "aboveFooter"
+        }
+      }
+    ],
+    "searchSidebar": [
+      {
+        "componentId": "promotionalWidget",
+        "props": {
+          "data": {
+            "title": "Join our Wine Club",
+            "imagePosition": "default",
+            "buttonLink": "https://www.bbcgoodfoodwineclub.com/?utm_source=website&utm_medium=GF_sidebar_review&utm_campaign=GF24",
+            "description": "<p>Save on your first four curated recipe boxes.</p>",
+            "buttonLabel": "Order your case",
+            "linkTarget": "",
+            "image": {
+              "url": "https://images.immediate.co.uk/production/volatile/sites/30/2022/12/Wine-club-case-9619a91.jpg",
+              "width": 3223,
+              "height": 3223,
+              "title": "BBC Good Food Wine Club",
+              "alt": "BBC Good Food Wine Club",
+              "aspectRatio": 1
+            },
+            "partnerImage": null
+          },
+          "widgetArea": "searchSidebar"
+        }
+      }
+    ]
+  },
+  "adSettings": {
+    "unitName": "/176986657/bbcgoodfood.com",
+    "headerBidder": "prebid",
+    "headerBidderUrl": "//micro.rubiconproject.com/prebid/dynamic/7959.js",
+    "headerBidderTimeout": 3500,
+    "adRefresh": {
+      "enabled": false,
+      "excludedOrderIds": [
+        2754193328, 2728546557, 2777270073, 476475177, 2740501331
+      ],
+      "durationInView": 17,
+      "percentageInView": 50
+    },
+    "targets": { "configuration": ["live"] },
+    "lazyLoading": {
+      "enabled": false,
+      "renderMarginPercent": 35,
+      "mobileScaling": 0
+    },
+    "stitcher": { "disableAllAdvertising": false },
+    "nativeAdvertiser": "nova",
+    "promoPlacementId": ""
+  }
+}
