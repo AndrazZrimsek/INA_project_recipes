@@ -1,0 +1,7 @@
+OPTIONS-000007 filter=lfs diff=lfs merge=lfs -text
+000004.log filter=lfs diff=lfs merge=lfs -text
+CURRENT filter=lfs diff=lfs merge=lfs -text
+IDENTITY filter=lfs diff=lfs merge=lfs -text
+LOCK filter=lfs diff=lfs merge=lfs -text
+LOG filter=lfs diff=lfs merge=lfs -text
+MANIFEST-000005 filter=lfs diff=lfs merge=lfs -text
