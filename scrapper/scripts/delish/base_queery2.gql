@@ -1,0 +1,106 @@
+query searchQuery(
+  $siteName: String!
+  $firstCount: Int!
+  $pageNumber: Int!
+  $queryString: String!
+  $displayTypeId: UUID
+) {
+  search(
+    index_name: $siteName
+    first: $firstCount
+    start: $pageNumber
+    query: $queryString
+    display_type_id: $displayTypeId
+  ) {
+    total_count
+    content {
+      id
+      title
+      media(role_in: [12, 2, 3]) {
+        ...SearchImageFragment
+      }
+      slug
+      edited_at
+      metadata {
+        social_dek
+        short_title
+        seo_meta_title
+        seo_meta_description
+      }
+      publish_from
+      display_id
+      display_date
+      legacy_id
+      recipe {
+        tip
+        instructions {
+          steps
+        }
+        ingredient_groups {
+          id
+          position
+          ingredients {
+            description
+            id
+            main_ingredient
+            unit
+            amount
+            food
+          }
+        }
+      }
+      section {
+        content {
+          status
+        }
+        title
+        slug
+      }
+      subsection {
+        title
+        slug
+      }
+    }
+  }
+}
+fragment SearchImageFragment on Image {
+  __typename
+  image_id
+  hips_url
+  hips_prefix
+  height
+  role
+  pathname
+  media_type
+  width
+  created_at
+  metadata {
+    crops
+    custom_tag
+    dek
+    domain
+    headline
+    selected_crop
+    legacy_crops
+    caption
+    photo_credit
+    embed_image_link_url
+    embed_image_link_title
+    embed_image_link_new_tab
+    embed_image_link_nofollow
+  }
+  image_metadata {
+    crops
+    legacy_domain
+    file_type
+    photo_credit
+    seo_meta_title
+    seo_meta_description
+  }
+  photographer {
+    name
+  }
+  source {
+    title
+  }
+}

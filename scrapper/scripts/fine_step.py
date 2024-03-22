@@ -45,11 +45,15 @@ async def main():
 
             item_url = data[0]["result"][0]["url"]
             id = data[0]["result"][0]["id"]
-            page_text = get_page(item_url)
-            data = parse_page_for_JSON(page_text)
-            data["expanded"] = True
-            await db.update(id, data)
-            print(item_url)
+            try:
+                page_text = get_page(item_url)
+                data = parse_page_for_JSON(page_text)
+                data["expanded"] = True
+                await db.update(id, data)
+                print(item_url)
+            except:
+                print(f"PAGE ERRORED OUT FOR {id}")
+                await db.delete(id)
 
 
 if __name__ == "__main__":
