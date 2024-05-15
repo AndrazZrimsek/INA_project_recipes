@@ -24,6 +24,7 @@ query = """SELECT
     methodSteps.content.data.value  AS instructions,
     pageUrl AS URL,
     title,
+    slug,
     userRatings,
     nutritionalInfo,
     permutiveModel.article.tags AS tags
@@ -70,4 +71,3 @@ if __name__ == "__main__":
 
     with open(f"out_{MAX}.json", "w") as f:
         json.dump(flatten_extend(out), f)
-    # # run scraper

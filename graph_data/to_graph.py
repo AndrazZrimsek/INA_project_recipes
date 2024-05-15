@@ -22,15 +22,18 @@ node_map = [
 
 
 def surreal_id_to_id(id: str):
-    return id.replace("recipe:\u27e8", "").replace("\u27e9", "")
+    return int(id.replace("recipe:\u27e8", "").replace("\u27e9", ""))
 
 
 def json_to_graph(jsn: list, node_map_array: dict):
     G = nx.Graph(name="recipeGraph")
 
     for recipe in tqdm(jsn):
-        i = surreal_id_to_id(recipe["id"])
-        n = G.add_node(i, title=recipe["title"])
+        # i = surreal_id_to_id(recipe["id"])
+        i = recipe["slug"]
+        recipe["type"] = "recipe"
+        G.add_node(i, data=recipe)
+
         for grp in node_map:
             field_name = grp["field"]
             lmbd = grp["groupBy"]
@@ -40,9 +43,11 @@ def json_to_graph(jsn: list, node_map_array: dict):
                 except:
                     print("SKIPED")
                     continue
+                item["type"] = field_name
                 G.add_node(item_id, data=item)
                 G.add_edge(i, item_id, type=field_name)
 
+    G = nx.convert_node_labels_to_integers(G, 0, "default", "label")
     return G
 
 
