@@ -1,8 +1,8 @@
-version: '3.7'
+version: "3.7"
 
 services:
- surrealdb:
-    image: surrealdb/surrealdb:latest
+  surrealdb:
+    image: surrealdb/surrealdb:v1.4.2
     command: start --log trace --auth --user root --pass root file:/db/reipeDump.db
     user: root
     volumes:

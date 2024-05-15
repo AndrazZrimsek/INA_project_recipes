@@ -40,3 +40,35 @@ select title,canonicalUrl, userRatings.avg, userRatings.total, expanded
 from recipe
 where mantis.emotion.sadness.level ="high"
 ```
+
+This query should return a reasonably clean output  
+
+```sql
+SELECT
+
+    id,
+    (authors.name) AS authors,
+    canonicalUrl AS url,
+    cookAndPrepTime,
+    description,
+    image.url AS image,
+    array::flatten(select * from ingredients.ingredients) AS ingredients ,
+    methodSteps.content.data.value  AS instructions,
+    pageUrl AS URL,
+    title,
+    userRatings,
+    nutritionalInfo,
+    permutiveModel.article.tags AS tags
+
+    OMIT ingredients.ingredientText,
+        ingredients.glossaryLink,
+        ingredients.`@type`,
+        ingredients.`@id`,
+        ingredients.term.`@type`,
+        ingredients.term.`@id`,
+        ingredients.term.meta,
+        ingredients.term.taxonomy,
+        userRatings.isHalfStar
+
+FROM recipe START 3 LIMIT 1;
+```

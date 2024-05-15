@@ -1,0 +1,247 @@
+{
+  "recipe": {
+    "id": "79296323-f301-49b8-81db-7463a41938c6",
+    "yields": 6,
+    "yields_upper": 8,
+    "yields_unit": "serving(s)",
+    "prep_time": "00:15:00",
+    "total_time": "13:05:00",
+    "calories_per_serving": 0,
+    "tip": "",
+    "ingredient_groups": [
+      {
+        "id": "9939e78d-1e86-48c3-90d3-72c0ecf3e01f",
+        "subhead": "French Toast",
+        "ingredients": [
+          {
+            "id": "35122ad3-1f66-499e-9ce7-fe96c34d32f1",
+            "unit": "",
+            "description": "\u003cp\u003eCooking spray\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 0
+          },
+          {
+            "id": "c5c45736-b0db-4b98-b3a0-296a8e153022",
+            "amount": 1,
+            "unit": "",
+            "description": "\u003cp\u003e(1-lb.) loaf\u0026nbsp;raisin challah or regular challah, sliced 1\" thick\u003c/p\u003e",
+            "main_ingredient": true,
+            "position": 1
+          },
+          {
+            "id": "8d903a40-731e-458c-a130-a4383eb30174",
+            "amount": 8,
+            "unit": "",
+            "description": "\u003cp\u003elarge eggs\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 2
+          },
+          {
+            "id": "f5f8ef54-a522-47bc-92ad-7a59788ab505",
+            "amount": 0.5,
+            "unit": "c.",
+            "description": "\u003cp\u003elight brown sugar\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 3
+          },
+          {
+            "id": "1426185b-6d39-4fc6-bcd2-02818f99af64",
+            "amount": 1,
+            "unit": "c.",
+            "description": "\u003cp\u003eheavy cream\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 4
+          },
+          {
+            "id": "c14c88db-464c-42d0-80cc-54c00a63cc73",
+            "amount": 1,
+            "unit": "c.",
+            "description": "\u003cp\u003ewhole milk\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 5
+          },
+          {
+            "id": "30a3b292-0f8d-4f5a-a76f-ca91e89ca5ea",
+            "amount": 1,
+            "unit": "tsp.",
+            "description": "\u003cp\u003evanilla extract\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 6
+          },
+          {
+            "id": "384c1ac4-3b8e-4e02-9704-c07ab55cd793",
+            "amount": 0.5,
+            "unit": "tsp.",
+            "description": "\u003cp\u003eground cinnamon\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 7
+          },
+          {
+            "id": "29264350-f65f-407b-acdf-cabb43b42df5",
+            "amount": 0.5,
+            "unit": "tsp.",
+            "description": "\u003cp\u003ekosher salt\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 8
+          },
+          {
+            "id": "1a71ff39-d0d5-4f0a-9390-ec3a6bd60588",
+            "amount": 0.25,
+            "unit": "tsp.",
+            "description": "\u003cp\u003efreshly grated nutmeg\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 9
+          }
+        ]
+      },
+      {
+        "id": "2507ff4d-e459-46ef-a5d4-5c1d944278a4",
+        "subhead": "Topping",
+        "ingredients": [
+          {
+            "id": "5e929b55-cf5b-4045-bc14-85f75ad77c05",
+            "amount": 1,
+            "unit": "c.",
+            "description": "\u003cp\u003e(2 sticks) butter, softened\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 0
+          },
+          {
+            "id": "e56b7b28-1af1-4546-b80e-a74e35805815",
+            "amount": 1,
+            "unit": "c.",
+            "description": "\u003cp\u003elight brown sugar\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 1
+          },
+          {
+            "id": "0ad3d640-110c-4914-ba62-8a427fcc01ff",
+            "amount": 1,
+            "unit": "c.",
+            "description": "\u003cp\u003eraw pecans, roughly chopped\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 2
+          },
+          {
+            "id": "b1487d0f-42c5-4121-a0ed-c85345b52810",
+            "amount": 0.5,
+            "unit": "tsp.",
+            "description": "\u003cp\u003eground cinnamon\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 3
+          },
+          {
+            "id": "e3e2be04-8714-41f9-a8f8-f54bc06a713a",
+            "amount": 0.25,
+            "unit": "tsp.",
+            "description": "\u003cp\u003efreshly grated nutmeg\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 4
+          },
+          {
+            "id": "343d19c9-76f7-4943-9827-ba847c517c5f",
+            "amount": 0.25,
+            "unit": "tsp.",
+            "description": "\u003cp\u003ekosher salt\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 5
+          },
+          {
+            "id": "7118eaa6-5850-42b9-9c6b-59ae4a3dc78e",
+            "unit": "",
+            "description": "\u003cp\u003eFresh fruit and maple syrup, for serving\u003c/p\u003e",
+            "main_ingredient": false,
+            "position": 6
+          }
+        ]
+      }
+    ],
+    "filters": [
+      {
+        "name": "vegetarian",
+        "category": 1
+      },
+      {
+        "name": "brunch",
+        "category": 2
+      },
+      {
+        "name": "Mother's Day",
+        "category": 2
+      },
+      {
+        "name": "winter",
+        "category": 2
+      },
+      {
+        "name": "breakfast",
+        "category": 4
+      },
+      {
+        "name": "brunch",
+        "category": 4
+      }
+    ],
+    "nutrition": {
+      "total_nutrients": {
+        "ENERC_KCAL": {
+          "quantity": 6306.561718840019,
+          "unit": "kcal"
+        },
+        "FAT": {
+          "quantity": 439.225415315052,
+          "unit": "g"
+        },
+        "FASAT": {
+          "quantity": 203.85058074112513,
+          "unit": "g"
+        },
+        "FATRN": {
+          "quantity": 7.59306,
+          "unit": "g"
+        },
+        "CHOCDF.net": {
+          "quantity": 468.77556190505044,
+          "unit": "g"
+        },
+        "FIBTG": {
+          "quantity": 22.1534,
+          "unit": "g"
+        },
+        "SUGAR": {
+          "quantity": 248.724492,
+          "unit": "g"
+        },
+        "PROCNT": {
+          "quantity": 119.91499040770003,
+          "unit": "g"
+        },
+        "CHOLE": {
+          "quantity": 2571.3100000000004,
+          "unit": "mg"
+        },
+        "NA": {
+          "quantity": 4101.313691626572,
+          "unit": "mg"
+        },
+        "CA": {
+          "quantity": 1441.340150000044,
+          "unit": "mg"
+        },
+        "K": {
+          "quantity": 2389.9386500000146,
+          "unit": "mg"
+        },
+        "FE": {
+          "quantity": 26.10510106250061,
+          "unit": "mg"
+        },
+        "VITD": {
+          "quantity": 18.163,
+          "unit": "µg"
+        }
+      },
+      "calories": 6306
+    }
+  }
+}
