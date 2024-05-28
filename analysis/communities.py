@@ -1,0 +1,118 @@
+from cdlib import algorithms
+import networkx as nx
+import community as community_louvain
+import matplotlib.pyplot as plt
+
+from collections import Counter
+
+def tag_frequency(G):
+    tag_frequency = Counter()
+    all_tags = set()
+    for node, data in G.nodes(data=True):
+        if data["data"]["type"] == "recipe":
+            tag_frequency.update(data["data"]["tags"][:-1])
+            all_tags.update(data["data"]["tags"][:-1])
+    tag_inverse_frequency = {tag: 1/freq if freq>5 else 0 for tag, freq in tag_frequency.items()}
+    return tag_inverse_frequency
+
+def most_common_tags_community(G, partition):
+    partition_tags = {}
+    print("Algorithm: Louvain")
+    for node, community_id in partition.items():
+        if G.nodes(data=True)[node]["data"]["type"] == "recipe":
+            partition_tags[community_id] = partition_tags.get(community_id, []) + G.nodes(data=True)[node]["data"]["tags"][:-1]
+
+    tag_document_frequency = Counter()
+    for tags in partition_tags.values():
+        tag_document_frequency.update(set(tags))
+            
+    for community_id, tags in partition_tags.items():
+        counted_tags = Counter(tags)
+        tag_inverse_frequency = tag_frequency(G)
+        cf_tags = {tag: freq * tag_inverse_frequency[tag] for tag, freq in counted_tags.items()}
+        sorted_cf = sorted(cf_tags.items(), key=lambda item: item[1], reverse=True)
+        all_contained = sum([1 for tag in sorted_cf if tag[1] == 1])
+
+        tfidf_tags = {tag: 1/tag_document_frequency[tag] * freq for tag, freq in counted_tags.items()}
+        sorted_tfidf = sorted(tfidf_tags.items(), key=lambda item: item[1], reverse=True)
+
+        size_of_community = list(partition.values()).count(community_id)
+        if size_of_community > 3:
+            print(f"Community {community_id} (size={size_of_community}): {sorted_tfidf[:8]},  Number tags all contained: {all_contained}")
+
+
+    print("###############################")
+
+# def most_common_tags_cdlib(partition, algorithm_name):
+#     partition_tags = {}
+#     print(f"Algorithm: {algorithm_name}")
+#     for i, community in enumerate(partition.communities):
+#         for node in community:
+#             if G.nodes(data=True)[node]["data"]["type"] == "recipe":
+#                 partition_tags[i] = partition_tags.get(i, []) + G.nodes(data=True)[node]["data"]["tags"][:-1]
+            
+#     for community_id, tags in partition_tags.items():
+#         counted_tags = Counter(tags)
+#         tfidf_tags = {tag: freq * tag_inverse_frequency[tag] for tag, freq in counted_tags.items()}
+#         sorted_tfidf = sorted(tfidf_tags.items(), key=lambda item: item[1], reverse=True)
+#         all_contained = sum([1 for tag in sorted_tfidf if tag[1] == 1])
+#         size_of_community = len(partition.communities[community_id])
+#         if size_of_community > 3:
+#             print(f"Community {community_id} (size={size_of_community}): {sorted_tfidf[:5]}, Number tags all contained: {all_contained}")
+    
+#     print("###############################")
+
+def calculate_comunities(G):
+    communities = {}
+    partition = community_louvain.best_partition(G)
+    most_common_tags_community(G, partition)
+    # partition2 = algorithms.walktrap(G)
+    # communities["Walktrap"] = partition2
+    # most_common_tags_cdlib(partition2, "Walktrap")
+    # partition3 = algorithms.label_propagation(G)
+    # communities["Label Propagation"] = partition3
+    # most_common_tags_cdlib(partition3, "Label Propagation")
+    # partition4 = algorithms.leiden(G)
+    # communities["Leiden"] = partition4
+    # most_common_tags_cdlib(partition4, "Leiden")
+    # partition6 = algorithms.r_spectral_clustering(G, 3)
+    # communities["Spectral Clustering"] = partition6
+    # most_common_tags_cdlib(partition6, "Spectral Clustering")
+
+    return partition
+
+def ingredients_subgraph(G, recipe_nodes, ingredient_nodes):
+    ingredient_graph = nx.Graph(name="Ingredient Graph")
+    ingredient_graph.add_nodes_from(ingredient_nodes)
+    for node in recipe_nodes:
+        neighbors = list(G.neighbors(node))
+        neighbour_pairs = [(neighbors[i], neighbors[j]) for i in range(len(neighbors)) for j in range(i+1, len(neighbors))]
+        for pair in neighbour_pairs:
+            if ingredient_graph.has_edge(pair[0], pair[1]):
+                ingredient_graph[pair[0]][pair[1]]["weight"] += 1
+            else:
+                ingredient_graph.add_edge(pair[0], pair[1])
+                ingredient_graph[pair[0]][pair[1]]["weight"] = 1
+    
+    return ingredient_graph
+
+def recipe_subgraph(G, recipe_nodes, ingredient_nodes, trim=False, threshold=2):
+    recipe_graph = nx.Graph(name="Recipe Graph")
+    recipe_graph.add_nodes_from(recipe_nodes)
+    for node in ingredient_nodes:
+        neighbors = list(G.neighbors(node))
+        neighbour_pairs = [(neighbors[i], neighbors[j]) for i in range(len(neighbors)) for j in range(i+1, len(neighbors))]
+        for pair in neighbour_pairs:
+            if recipe_graph.has_edge(pair[0], pair[1]):
+                recipe_graph[pair[0]][pair[1]]["weight"] += 1
+            else:
+                recipe_graph.add_edge(pair[0], pair[1])
+                recipe_graph[pair[0]][pair[1]]["weight"] = 1
+
+    if trim:
+        edges_to_remove = [(u, v) for u, v, d in recipe_graph.edges(data=True) if d["weight"] <= threshold]
+        recipe_subgraph.remove_edges_from(edges_to_remove)
+        recipe_subgraph = recipe_subgraph.subgraph(sorted(nx.connected_components(recipe_subgraph), key=len, reverse=True)[0])
+        return recipe_subgraph
+
+    return recipe_graph
