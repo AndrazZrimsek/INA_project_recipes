@@ -47,7 +47,7 @@ class Community_tree():
 
     def get_most_similar_community(self, ingredients):
         if self.communitySubtrees is None:
-            return self
+            return self.communities
 
         most_similar_community = None
         max_similarity = 0
