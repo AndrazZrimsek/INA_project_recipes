@@ -5,6 +5,94 @@ import matplotlib.pyplot as plt
 
 from collections import Counter
 
+class Community_tree():
+    def __init__(self, G, max_depth = 5, depth=1, parent=None):
+        """Initializes a community tree object. The tree is built by recursively dividing the graph into communities.
+        
+        Args:
+            G (nx.Graph): The graph to be divided into communities.
+            max_depth (int, optional): The maximum depth of the tree. Defaults to 5.
+            depth (int, optional): The depth of the current node in the tree. Defaults to 1.
+            parent (Community_tree, optional): The parent node of the current node. Defaults to None."""
+        
+        self.parent = parent
+        self.G = G
+        self.depth = depth
+        self.max_depth = max_depth
+        
+        node_communities = self.calculate_communities()
+        community_nodes = {key: [] for key in node_communities.values()}
+        for node, id in node_communities.items():
+            community_nodes[id].append(node)
+
+        # Dict of communities and nodes
+        self.communities = community_nodes
+
+        # Dict of Community Trees for communities
+        self.communitySubtrees = None
+
+        self.build_community_tree()
+
+        self.ingredient_counter = self.get_ingredient_counter()
+
+    def build_community_tree(self):
+        if self.depth == self.max_depth:
+            return
+        
+        self.communitySubtrees = {}
+
+        for community_id, nodes in self.communities.items():
+            community_subgraph = self.G.subgraph(nodes)
+            self.communitySubtrees[community_id] = Community_tree(community_subgraph, self.max_depth, self.depth+1, self)
+
+    def get_most_similar_community(self, ingredients):
+        if self.communitySubtrees is None:
+            return self.communities
+
+        most_similar_community = None
+        max_similarity = 0
+        for community in self.communitySubtrees.values():
+            similarity = community.get_similarity(ingredients)
+            if similarity > max_similarity:
+                max_similarity = similarity
+                most_similar_community = community
+
+        return most_similar_community
+    
+    def get_similarity(self, ingredients):
+        count = 0
+        for ingredient in ingredients:
+            count += self.ingredient_counter.get(ingredient, 0)
+        return count#/sum(self.ingredient_counter.values())
+
+    def calculate_communities(self):
+        return community_louvain.best_partition(self.G)
+    
+    def get_communities(self, depth=None):
+        if depth is None:
+            return self.communities
+        elif depth == self.depth:
+            return self.communities
+        else:
+            communities = []
+            for subcommunity in self.communitySubtrees.values():
+                communities += [value for key, value in subcommunity.get_communities(depth).items()]
+
+            community_dict = {}
+            for i, community in enumerate(communities):
+                community_dict[i] = community
+            return community_dict
+        
+    def get_ingredient_counter(self):
+        community_ingredients = []
+        for node, data in self.G.nodes(data=True):
+            if self.G.nodes(data=True)[node]["data"]["type"] == "recipe":
+                for ingredient in self.G.neighbors(node):
+                    community_ingredients.append(self.G.nodes(data=True)[ingredient]["data"]["term"]["slug"])
+        
+        return Counter(community_ingredients)
+    
+
 def tag_frequency(G):
     tag_frequency = Counter()
     all_tags = set()
