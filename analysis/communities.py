@@ -42,7 +42,10 @@ class Community_tree():
         self.communitySubtrees = {}
 
         for community_id, nodes in self.communities.items():
-            community_subgraph = self.G.subgraph(nodes)
+            all_nodes = [*nodes]
+            for node in nodes:
+                all_nodes += list(self.G.neighbors(node))
+            community_subgraph = nx.Graph(self.G.subgraph(set(all_nodes)))
             self.communitySubtrees[community_id] = Community_tree(community_subgraph, self.max_depth, self.depth+1, self)
 
     def get_most_similar_community(self, ingredients):
