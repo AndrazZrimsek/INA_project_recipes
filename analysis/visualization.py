@@ -1,4 +1,5 @@
 import networkx as nx
+import math
 
 def get_main_measure(G, nodes, data="ingredients", term_frequency=None, previous_tags=[]):
     # Get main 5 ingredients from all recipe nodes combined
@@ -145,7 +146,21 @@ def plot_all(G, community_tree, rotate=False):
                     edge_color='lightgray',
                     node_color='gray') 
     node_labels = nx.get_node_attributes(tree_graph, 'name')
-    nx.draw_networkx_labels(tree_graph, pos, labels=node_labels, font_size=8)
+    # nx.draw_networkx_labels(tree_graph, pos, labels=node_labels, font_size=8)
+    root_x = pos[root_id][0]
+    root_y = pos[root_id][1]
+    for key in pos:
+        if (pos[key][1] - root_y) != 0:
+            angle = (pos[key][0] - root_x) / (pos[key][1] - root_y)
+        else:
+            angle = 0  # or any other value that makes sense in your context
+
+        angle = math.degrees(math.atan2(pos[key][1] - root_y, pos[key][0] - root_x))
+        if angle < -90 or angle > 90:
+            angle += 180
+        # print(f'Angle: {angle}')
+
+        plt.text(pos[key][0], pos[key][1], node_labels[key], fontsize=8, ha='center', va='center', color='black', rotation=angle)
     plt.show()
 
     tree_graph = nx.Graph()
@@ -168,5 +183,19 @@ def plot_all(G, community_tree, rotate=False):
 
     # Rotate all position coordinates by 90 degrees around root node
 
-    nx.draw_networkx_labels(tree_graph, pos, labels=node_labels, font_size=8)
+    # nx.draw_networkx_labels(tree_graph, pos, labels=node_labels, font_size=8)
+    root_x = pos[root_id][0]
+    root_y = pos[root_id][1]
+    for key in pos:
+        if (pos[key][1] - root_y) != 0:
+            angle = (pos[key][0] - root_x) / (pos[key][1] - root_y)
+        else:
+            angle = 0  # or any other value that makes sense in your context
+
+        angle = math.degrees(math.atan2(pos[key][1] - root_y, pos[key][0] - root_x))
+        if angle < -90 or angle > 90:
+            angle += 180
+        # print(f'Angle: {angle}')
+
+        plt.text(pos[key][0], pos[key][1], node_labels[key], fontsize=8, ha='center', va='center', color='black', rotation=angle)
     plt.show()
