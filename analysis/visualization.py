@@ -22,7 +22,7 @@ def get_main_measure(G, nodes, data="ingredients", term_frequency=None, previous
             if G.nodes(data=True)[node]["data"]["type"] != "recipe":
                 continue
             for tag in G.nodes(data=True)[node]["data"]["tags"][:-1]:
-                if tag == "\xa0Josh Eagleton" or tag == "Good Food":
+                if tag == "\xa0Josh Eagleton" or tag == "Good Food" or tag == "Alice Johnston" or tag == "Kane Statton":
                     continue
                 if tag in previous_tags:
                     continue
@@ -80,12 +80,11 @@ def get_node_centrality_recipes(G):
     top_nodes = sorted(closeness.items(), key=lambda item: item[1], reverse=True)
     return top_nodes[:2]
 
-def create_tree_graph(community_tree, G, G_original, measure="ingredients", term_frequency=None, previous_tags=[]):
+def create_tree_graph(community_tree, G, G_original, root_id, measure="ingredients", term_frequency=None, previous_tags=[]):
     subtrees = community_tree.communitySubtrees
-    new_id = len(G.nodes)
-    best_measure = get_main_measure(G_original, community_tree.G.nodes, data=measure, previous_tags=previous_tags)[0]
+    
+    
     # print(best_measure)
-    G.add_node(new_id, type="root", name=best_measure[0])
     if subtrees is None:
         if measure == "ingredients":
             main_ingredients = get_main_measure(G_original, community_tree.G.nodes, data="ingredients", term_frequency=term_frequency, previous_tags=previous_tags)
@@ -93,26 +92,14 @@ def create_tree_graph(community_tree, G, G_original, measure="ingredients", term
             for ingredient in main_ingredients:
                 ingredient_id = len(G.nodes)
                 G.add_node(ingredient_id, type="ingredient", name=ingredient[0], count=ingredient[1])
-                G.add_edge(new_id, ingredient_id)
+                G.add_edge(root_id, ingredient_id)
         elif measure == "tags":
             main_tags = get_main_measure(G_original, community_tree.G.nodes, data="tags", term_frequency=term_frequency, previous_tags=previous_tags)
             # print(f'Main tags: {main_tags}')
             for tag in main_tags:
                 tag_id = len(G.nodes)
                 G.add_node(tag_id, type="tag", name=tag[0], count=tag[1])
-                G.add_edge(new_id, tag_id)
-        # elif measure == "closeness":
-        #     top_nodes = get_node_centrality_recipes(community_tree.G, previous_tags=previous_tags)
-        #     # print(f'Top nodes: {top_nodes}')
-        #     for node in top_nodes:
-        #         node_id = len(G.nodes)
-        #         G.add_node(node_id, type="recipe", name=community_tree.G.nodes(data=True)[node[0]]["data"]["slug"], closeness=node[1])
-        #         G.add_edge(new_id, node_id)
-        # for node in community_tree.G.nodes:
-        #     #only add recipe nodes
-        #     if community_tree.G.nodes[node]["data"]["type"] == "recipe":
-        #         G.add_node(node, **community_tree.G.nodes[node])
-        #         G.add_edge(new_id, node)
+                G.add_edge(root_id, tag_id)
     else:
         for subtree in subtrees.values():
             if measure == "ingredients":
@@ -121,10 +108,14 @@ def create_tree_graph(community_tree, G, G_original, measure="ingredients", term
                 frequency = get_tag_document_frequency(community_tree.G)
             else:
                 frequency = None
-            subtree_id = create_tree_graph(subtree, G, G_original, measure=measure, term_frequency=frequency, previous_tags=previous_tags+[best_measure[0]])
-            G.add_edge(new_id, subtree_id)
+            # G.add_edge(new_id, subtree_id)
+            new_id = len(G.nodes)
+            best_measure = get_main_measure(G_original, community_tree.G.nodes, data=measure, previous_tags=previous_tags)[0]
+            G.add_node(new_id, type="root", name=best_measure[0])
+            G.add_edge(root_id, new_id)
+            create_tree_graph(subtree, G, G_original, new_id, measure=measure, term_frequency=frequency, previous_tags=previous_tags+[best_measure[0]])
 
-    return new_id
+    return #new_id
 
 from communities import recipe_subgraph
 
@@ -132,14 +123,23 @@ from visualization import create_tree_graph
 import networkx as nx
 import matplotlib.pyplot as plt
 
-def plot_all(G, community_tree):
+def plot_all(G, community_tree, rotate=False):
 
     tree_graph = nx.Graph()
-    root_id = create_tree_graph(community_tree, tree_graph, G, measure="ingredients")
+    root_id = len(tree_graph.nodes)
+    most_common_ingredient = get_main_measure(G, community_tree.G.nodes, data="ingredients")[0]
+    tree_graph.add_node(root_id, type="root", name=most_common_ingredient[0])
+    create_tree_graph(community_tree, tree_graph, G, root_id, measure="ingredients", previous_tags=[most_common_ingredient[0]])
 
 
-    plt.figure(figsize=(20,20))
+    plt.figure(figsize=(12,12))
     pos = nx.nx_agraph.graphviz_layout(tree_graph, prog='twopi', root=root_id) ##Needs graphviz
+    
+    if rotate:
+        root_pos = pos[root_id]
+        for key in pos.keys():
+            pos[key] = (pos[key][1] - root_pos[1] + root_pos[0], pos[key][0] - root_pos[0] + root_pos[1])
+    
     nx.draw_networkx(tree_graph, pos=pos, 
                     with_labels=False, node_size=0.5,
                     edge_color='lightgray',
@@ -149,13 +149,17 @@ def plot_all(G, community_tree):
     plt.show()
 
     tree_graph = nx.Graph()
-    root_id = create_tree_graph(community_tree, tree_graph, G, measure="tags")
+    root_id = len(tree_graph.nodes)
+    most_common_ingredient = get_main_measure(G, community_tree.G.nodes, data="tags")[0]
+    tree_graph.add_node(root_id, type="root", name=most_common_ingredient[0])
+    create_tree_graph(community_tree, tree_graph, G, root_id, measure="tags", previous_tags=[most_common_ingredient[0]])
 
-    plt.figure(figsize=(20,20))
+    plt.figure(figsize=(12,12))
     pos = nx.nx_agraph.graphviz_layout(tree_graph, prog='twopi', root=root_id) ##Needs graphviz
-    # root_pos = pos[root_id]
-    # for key in pos.keys():
-    #     pos[key] = (pos[key][1] - root_pos[1] + root_pos[0], pos[key][0] - root_pos[0] + root_pos[1])
+    if rotate:
+        root_pos = pos[root_id]
+        for key in pos.keys():
+            pos[key] = (pos[key][1] - root_pos[1] + root_pos[0], pos[key][0] - root_pos[0] + root_pos[1])
     nx.draw_networkx(tree_graph, pos=pos, 
                     with_labels=False, node_size=0.5,
                     edge_color='lightgray',
