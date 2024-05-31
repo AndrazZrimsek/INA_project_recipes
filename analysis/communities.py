@@ -43,10 +43,13 @@ class Community_tree():
 
         for community_id, nodes in self.communities.items():
             all_nodes = [*nodes]
-            for node in nodes:
-                all_nodes += list(self.G.neighbors(node))
+            # for node in nodes:
+            #     all_nodes += list(self.G.neighbors(node))
             community_subgraph = nx.Graph(self.G.subgraph(set(all_nodes)))
-            self.communitySubtrees[community_id] = Community_tree(community_subgraph, self.max_depth, self.depth+1, self)
+            if len(all_nodes) < 100:
+                self.communitySubtrees[community_id] = Community_tree(community_subgraph, self.max_depth, self.max_depth, self)
+            else:
+                self.communitySubtrees[community_id] = Community_tree(community_subgraph, self.max_depth, self.depth+1, self)
 
     def get_most_similar_community(self, ingredients):
         if self.communitySubtrees is None:
@@ -66,7 +69,7 @@ class Community_tree():
         count = 0
         for ingredient in ingredients:
             count += self.ingredient_counter.get(ingredient, 0)
-        return count#/sum(self.ingredient_counter.values())
+        return count#/len(self.ingredient_counter.keys())
 
     def calculate_communities(self):
         return community_louvain.best_partition(self.G)
@@ -154,21 +157,8 @@ def most_common_tags_community(G, partition):
 #     print("###############################")
 
 def calculate_comunities(G):
-    communities = {}
     partition = community_louvain.best_partition(G)
     most_common_tags_community(G, partition)
-    # partition2 = algorithms.walktrap(G)
-    # communities["Walktrap"] = partition2
-    # most_common_tags_cdlib(partition2, "Walktrap")
-    # partition3 = algorithms.label_propagation(G)
-    # communities["Label Propagation"] = partition3
-    # most_common_tags_cdlib(partition3, "Label Propagation")
-    # partition4 = algorithms.leiden(G)
-    # communities["Leiden"] = partition4
-    # most_common_tags_cdlib(partition4, "Leiden")
-    # partition6 = algorithms.r_spectral_clustering(G, 3)
-    # communities["Spectral Clustering"] = partition6
-    # most_common_tags_cdlib(partition6, "Spectral Clustering")
 
     return partition
 
@@ -201,7 +191,7 @@ def recipe_subgraph(G, recipe_nodes, ingredient_nodes, trim=False, threshold=2):
                 recipe_graph[pair[0]][pair[1]]["weight"] = 1
 
     if trim:
-        edges_to_remove = [(u, v) for u, v, d in recipe_graph.edges(data=True) if d["weight"] <= threshold]
+        edges_to_remove = [(u, {v: d}) for u, v, d in recipe_graph.edges(data=True) if d["weight"] <= threshold]
         recipe_subgraph.remove_edges_from(edges_to_remove)
         recipe_subgraph = recipe_subgraph.subgraph(sorted(nx.connected_components(recipe_subgraph), key=len, reverse=True)[0])
         return recipe_subgraph
